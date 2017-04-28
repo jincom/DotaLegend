@@ -1,0 +1,28 @@
+
+
+message WXToken {
+	required string access_token = 1;
+	optional int32 expires_in = 2;
+	optional string refresh_token = 3;
+	required string openid = 4;
+	optional string scope = 5;
+	optional string unionid = 6;
+}
+
+message WXError{
+	required int32 errcode = 1;
+	optional string errmsg = 2;
+}
+
+message WXUserInfo{
+	required string openid = 1;
+	required string nickname = 2;
+	optional int32 sex = 3;
+	optional string province = 4;
+	optional string city = 5;
+	optional string country = 6;
+	optional string headimgurl = 7;
+	repeated string privilege = 8;
+	required string unionid = 9;
+}
+

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotaLegend.Plugins", "DotaLegend.Plugins.csproj", "{FEDD4521-52EB-9BA3-3406-C81E0F3B527A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotaLegend", "DotaLegend.csproj", "{89826B26-BF20-672F-6572-27CFA95FEBDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotaLegend.Editor.Plugins", "DotaLegend.Editor.Plugins.csproj", "{1D566979-9D46-A3F5-882C-F0166BC7988B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotaLegend.Editor", "DotaLegend.Editor.csproj", "{ED6BE5B2-BA01-632B-8B08-1187EEA31AC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEDD4521-52EB-9BA3-3406-C81E0F3B527A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEDD4521-52EB-9BA3-3406-C81E0F3B527A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEDD4521-52EB-9BA3-3406-C81E0F3B527A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEDD4521-52EB-9BA3-3406-C81E0F3B527A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89826B26-BF20-672F-6572-27CFA95FEBDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89826B26-BF20-672F-6572-27CFA95FEBDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89826B26-BF20-672F-6572-27CFA95FEBDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89826B26-BF20-672F-6572-27CFA95FEBDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D566979-9D46-A3F5-882C-F0166BC7988B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D566979-9D46-A3F5-882C-F0166BC7988B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D566979-9D46-A3F5-882C-F0166BC7988B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D566979-9D46-A3F5-882C-F0166BC7988B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED6BE5B2-BA01-632B-8B08-1187EEA31AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED6BE5B2-BA01-632B-8B08-1187EEA31AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED6BE5B2-BA01-632B-8B08-1187EEA31AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED6BE5B2-BA01-632B-8B08-1187EEA31AC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

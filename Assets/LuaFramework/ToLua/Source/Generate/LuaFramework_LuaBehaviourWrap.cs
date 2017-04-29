@@ -6,7 +6,7 @@ public class LuaFramework_LuaBehaviourWrap
 {
 	public static void Register(LuaState L)
 	{
-		L.BeginClass(typeof(LuaFramework.LuaBehaviour), typeof(View));
+		L.BeginClass(typeof(LuaFramework.LuaBehaviour), typeof(Base));
 		L.RegFunction("AddClick", AddClick);
 		L.RegFunction("RemoveClick", RemoveClick);
 		L.RegFunction("ClearClick", ClearClick);

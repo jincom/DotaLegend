@@ -8,7 +8,7 @@ local EventLib = require "eventlib"
 local Event = {}
 local events = {}
 
-function Event.AddListener(event,handler)
+function Event.AddListener(event, handler)
 	if not event or type(event) ~= "string" then
 		error("event parameter in addlistener function has to be string, " .. type(event) .. " not right.")
 	end

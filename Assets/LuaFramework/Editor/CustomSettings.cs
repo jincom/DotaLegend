@@ -164,21 +164,30 @@ public static class CustomSettings
 		_GT(typeof(Resources)), 
         
         //for UGUI
-        _GT(typeof(Canvas)),   
-        _GT(typeof(RenderMode)),
-        _GT(typeof(Image)),
+        _GT(typeof(UnityEngine.Canvas)),
+        _GT(typeof(UnityEngine.CanvasGroup)),
+        _GT(typeof(UnityEngine.RenderMode)),
+        _GT(typeof(UnityEngine.UI.Image)),
+        _GT(typeof(UnityEngine.UI.Button)),
+        _GT(typeof(UnityEngine.UI.Toggle)),
+        _GT(typeof(UnityEngine.UI.ToggleGroup)),
+        _GT(typeof(UnityEngine.UI.ScrollRect)),
+        _GT(typeof(UnityEngine.UI.Slider)),
+        _GT(typeof(UnityEngine.UI.Text)),
+        _GT(typeof(UnityEngine.UI.GridLayoutGroup)),
+        _GT(typeof(UnityEngine.UI.HorizontalLayoutGroup)),
+        _GT(typeof(UnityEngine.UI.VerticalLayoutGroup)),
         _GT(typeof(UnityEngine.EventSystems.EventSystem)),
-        _GT(typeof(GUILayer)),
-        _GT(typeof(CanvasScaler)),
+        _GT(typeof(UnityEngine.GUILayer)),
+        _GT(typeof(UnityEngine.UI.CanvasScaler)),
         _GT(typeof(UnityEngine.EventSystems.StandaloneInputModule)),
         _GT(typeof(UnityEngine.UI.GraphicRaycaster)),
         _GT(typeof(UnityEngine.RectTransform.Edge)),
-        _GT(typeof(CanvasScaler.ScaleMode)),
-        _GT(typeof(CanvasScaler.ScreenMatchMode)),
+        _GT(typeof(UnityEngine.UI.CanvasScaler.ScaleMode)),
+        _GT(typeof(UnityEngine.UI.CanvasScaler.ScreenMatchMode)),
         
           
         //for LuaFramework
-        _GT(typeof(Text)),
 
         _GT(typeof(Util)),
         _GT(typeof(AppConst)),
@@ -198,6 +207,9 @@ public static class CustomSettings
         _GT(typeof(SUIFW.BaseUIForm)),
         _GT(typeof(SUIFW.LuaUIForm)),
         _GT(typeof(SUIFW.UIType)),
+
+        //for test
+        _GT(typeof(LuaFramework.UIEventListener)),
 
         	  
     };

@@ -65,7 +65,7 @@ function Game.OnInitOK()
 --    if ctrl ~= nil and AppConst.ExampleMode == 1 then
 --        ctrl:Awake();
 --    end
---    uiMgr:ShowUIForms('LoginPanel', true)
+    uiMgr:ShowUIForms('HeroPanel')
     
     
     logWarn('LuaFramework InitOK--->>>')

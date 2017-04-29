@@ -7,6 +7,7 @@ require "Common/functions"
 
 
 local cls = class()
+local EventCenter = require("events")
 
 function cls:ctor(go)
     --在构造函数定义属于obj的变量
@@ -19,17 +20,18 @@ end
 
 function cls:Awake()
     logWarn('BasePanel Awake')
+    --self:RegistyEvents()
     --变量的初始化
 end
 
-function cls:RegistyEvent()
+function cls:RegistyEvents()
     logWarn('BasePanel RegistyEvent')
 end
 
 --初始化函数
 function cls:OnInitialize()
     logWarn('BasePanel OnInitialize')
-    self:RegistyEvent()
+    self:RegistyEvents()
 end
 
 --显示窗体方法
@@ -70,6 +72,21 @@ function cls:CloseUIForm(uiFormName)
     else
         error('UIFormName not a string type', 1)
     end
+end
+
+--注册Panel事件
+function cls:AddEvent(event_name, handler)
+    EventCenter.AddListener(event_name, handler)
+end
+
+--广播Panel事件
+function cls:BrocastEvent(event_name, ...)
+    EventCenter.Brocast(event_name, self, ...)
+end
+
+--反注册Panel事件
+function cls:RemoveEvent(event_name, handler)
+    EventCenter.RemoveListener(event_name, handler)
 end
 
 function cls:OnMessage(message)

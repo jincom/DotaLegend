@@ -406,6 +406,7 @@ namespace SUIFW
             {
                 _DicCurrentShowUIForms.Add(uiFormName, baseUIFormFromAllCache);
                 baseUIFormFromAllCache.Display(); //显示当前窗体
+                
             }
         }
 

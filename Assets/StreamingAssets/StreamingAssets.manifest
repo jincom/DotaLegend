@@ -1,7 +1,16 @@
 ManifestFileVersion: 0
-CRC: 2791741472
+CRC: 3059733901
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: textrues
+      Name: prefabs/ui/heropanel
+      Dependencies: {}
+    Info_1:
+      Name: prefabs/ui/mainpanel
+      Dependencies: {}
+    Info_2:
+      Name: prefabs/ui/topbarpanel
+      Dependencies: {}
+    Info_3:
+      Name: prefabs/ui/xbarpanel
       Dependencies: {}

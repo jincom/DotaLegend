@@ -19,5 +19,6 @@ public class NotiConst
     public const string UPDATE_DOWNLOAD = "UpdateDownload";         //更新下载
     public const string UPDATE_PROGRESS = "UpdateProgress";         //更新进度
     public const string UPDATE_COMPLETE = "UpdateComplete";         //更新进度
-    public const string UPDATE_TIPS = "UpdateTips";         //更新进度
+    public const string UPDATE_TIPS = "UpdateTips";                 //更新进度
+    //public const string PANEL_f = "";
 }

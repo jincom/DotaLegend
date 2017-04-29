@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace LuaFramework
 {
-    public class LuaBehaviour : View
+    public class LuaBehaviour : Base
     {
         private string data = null;
         private Dictionary<string, LuaFunction> buttons = new Dictionary<string, LuaFunction>();

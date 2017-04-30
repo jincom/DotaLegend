@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1097238226
+CRC: 218476945
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 2426f99698fe04b14f1c064b342cea69
+    Hash: 5f8de8f5df2f823225fa7f15a0ff174f
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 1f46664ee0bf974f7a3bf4d3053cca32
+    Hash: ad9b9ed4751c6002fdba8d14088f51d1
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -18,6 +18,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 - Class: 114
+  Script: {fileID: 2109663825, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
   Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 - Class: 115
   Script: {instanceID: 0}
@@ -28,5 +30,5 @@ ClassTypes:
 - Class: 224
   Script: {instanceID: 0}
 Assets:
-- Assets/LuaFramework/AssetBundle/Prefabs/UI/XBarPanel/XBarPanel.prefab
+- Assets/LuaFramework/AssetBundle/Prefabs/UI/RightbarPanel/RightbarPanel.prefab
 Dependencies: []

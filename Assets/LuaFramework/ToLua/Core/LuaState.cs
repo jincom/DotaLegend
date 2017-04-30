@@ -2040,6 +2040,7 @@ namespace LuaInterface
             string err = LuaToString(-1);
             LuaSetTop(oldTop - 1);                        
             throw new LuaException(err, LuaException.GetLastError());
+            
         }
     }
 }

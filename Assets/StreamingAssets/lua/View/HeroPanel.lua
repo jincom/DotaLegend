@@ -22,6 +22,8 @@ function cls:ctor(go)
     self.toe_back = Util.Child(self.transform, "toe_back")
     self.toe_prefab = Util.Child(self.transform, "toe_prefab")
     self.content = Util.Child(self.transform, "img_frame/Viewport/Content")
+    self.img_frame = Util.Child(self.transform, "img_frame").transform
+    self.img_frame:SetAsLastSibling()
     self.UIEventListener = go:AddComponent(typeof(UIEL))
     self.UIEventListener.self = self
     
@@ -37,17 +39,27 @@ function cls:OnToggleChange(go, isOn)
     if go == nil then return end
     
     local name = go.name
-    if name == 'toe_all' then
+    if name == 'toe_all' and isOn then
       logWarn('toe_all is '..tostring(isOn))
-    elseif name == 'toe_front' then
+      self.img_frame:SetAsLastSibling()
+      go.transform:SetAsLastSibling()
+    elseif name == 'toe_front' and isOn then
       logWarn('toe_front is '..tostring(isOn))
-    elseif name == 'toe_middle' then
+      self.img_frame:SetAsLastSibling()
+      go.transform:SetAsLastSibling()
+    elseif name == 'toe_middle' and isOn then
       logWarn('toe_middle is '..tostring(isOn))
-    elseif name == 'toe_back' then
+      self.img_frame:SetAsLastSibling()
+      go.transform:SetAsLastSibling()
+    elseif name == 'toe_back' and isOn then
       logWarn('toe_back is '..tostring(isOn))
       self:BrocastEvent('MESSAGE_ADDITEM', {name = 'MESSAGE_ADDITEM'})
-    elseif name == 'toe_prefab' then
+      self.img_frame:SetAsLastSibling()
+      go.transform:SetAsLastSibling()
+    elseif name == 'toe_prefab' and isOn then
       logWarn('toe_prefab is '..tostring(isOn))
+      self.img_frame:SetAsLastSibling()
+      go.transform:SetAsLastSibling()
       
     end
 end

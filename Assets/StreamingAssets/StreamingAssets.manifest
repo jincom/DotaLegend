@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 3059733901
+CRC: 536950860
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -9,8 +9,8 @@ AssetBundleManifest:
       Name: prefabs/ui/mainpanel
       Dependencies: {}
     Info_2:
-      Name: prefabs/ui/topbarpanel
+      Name: prefabs/ui/rightbarpanel
       Dependencies: {}
     Info_3:
-      Name: prefabs/ui/xbarpanel
+      Name: prefabs/ui/topbarpanel
       Dependencies: {}

@@ -14,6 +14,7 @@ namespace LuaFramework
 
         protected void Awake()
         {
+            RectTransform t;
             Util.CallMethod(name, "Awake", gameObject);
         }
 

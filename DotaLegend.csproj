@@ -169,6 +169,7 @@
     <Compile Include="Assets\LuaFramework\Scripts\Utility\Util.cs" />
     <Compile Include="Assets\LuaFramework\Scripts\View\AppView.cs" />
     <Compile Include="Assets\LuaFramework\Test\TestDoTween.cs" />
+    <Compile Include="Assets\LuaFramework\Test\TestLayout.cs" />
     <Compile Include="Assets\LuaFramework\Test\TestWWWDownTexture.cs" />
     <Compile Include="Assets\LuaFramework\ToLua\BaseType\LuaInterface_EventObjectWrap.cs" />
     <Compile Include="Assets\LuaFramework\ToLua\BaseType\LuaInterface_LuaConstructorWrap.cs" />

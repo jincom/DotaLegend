@@ -323,7 +323,7 @@ namespace SUIFW
                     //把克隆体，加入到“所有UI窗体”（缓存）集合中。
                     _DicALLUIForms.Add(uiFormName, baseUiForm);
 
-                    baseUiForm.OnInitialize();
+                    //baseUiForm.OnInitialize();
 
                     OnShowUIForms(baseUiForm, uiFormName);
                 });
@@ -382,7 +382,7 @@ namespace SUIFW
                 //把克隆体，加入到“所有UI窗体”（缓存）集合中。
                 _DicALLUIForms.Add(uiFormName, baseUiForm);
 
-                baseUiForm.OnInitialize();
+                //baseUiForm.OnInitialize();
 
                 OnShowUIForms(baseUiForm, uiFormName);
             }

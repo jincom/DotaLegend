@@ -38,11 +38,16 @@ namespace SUIFW
 	    private LuaTable _luaPanel = null;
 	    private LuaFunction _luaFunc = null;
 
+        protected LuaUIForm()
+        {
+            
+        }
+
 	    protected virtual void Awake()
 	    {
             sb = new StringBuilder();
-
             InitLuaVar();
+            CallLuaMethod("OnInitialize", _luaPanel);
             CallLuaMethod("Awake", _luaPanel);
 	    }
 

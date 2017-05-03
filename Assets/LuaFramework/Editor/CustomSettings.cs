@@ -210,6 +210,7 @@ public static class CustomSettings
 
         //for test
         _GT(typeof(LuaFramework.UIEventListener)),
+        _GT(typeof(LuaFramework.EventTrigger)),
 
         	  
     };

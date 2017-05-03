@@ -2,6 +2,7 @@
 --Date
 --此文件由[BabeLua]插件自动生成
 local UIEL = LuaFramework.UIEventListener
+local ET = LuaFramework.EventTrigger
 local UE = UnityEngine
 
 
@@ -30,7 +31,11 @@ function cls:ctor(go)
 end
 
 function cls:Awake()
-    resMgr:LoadPrefab('HeroPanel', {'heroitem'}, function(objs) self.hero_item = objs[0] end)
+
+    self.onItemClick = function(go, data) print('EventTrigger OnClick:'..go.name) end
+    self.onFinishLoadItem = function(objs) self.hero_item = objs[0] end
+    resMgr:LoadPrefab('HeroPanel', {'heroitem'}, self.onFinishLoadItem)
+    
 end
 
 
@@ -91,6 +96,7 @@ function cls:RegistyEvents()
     
     self:AddEvent('MESSAGE_ADDITEM', self.OnMessage)
     
+    
 end
 
 function cls:OnMessage(message)
@@ -100,6 +106,9 @@ function cls:OnMessage(message)
         local item = UE.GameObject.Instantiate(self.hero_item)
         item.transform:SetParent(self.content.transform)
         item.transform.localScale = Vector3.one
+        local trigger = item:AddComponent(typeof(ET))
+        trigger.IsPassEvent = false;
+        trigger.onDrag = trigger.onDrag + self.onItemClick
     end
 end
 

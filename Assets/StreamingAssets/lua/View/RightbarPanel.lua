@@ -22,13 +22,19 @@ function cls:ctor(go)
     self.Toggle = Util.Child(transform, 'Toggle')
     self.img_bar = Util.Child(transform, 'img_bar')
     self.btn_hero = Util.Child(transform, 'img_bar/btn_hero')
-
+    
+    self.toggle = self.Toggle:GetComponent(typeof(UE.UI.Toggle))
 end
 
 function cls:Awake()
     --resMgr:LoadPrefab('HeroPanel', {'heroitem'}, function(objs) self.hero_item = objs[0] end)
+    self:ResetToggleState()
 end
 
+function cls:ResetToggleState()
+    self.toggle.isOn = false
+    self.img_bar:SetActive(false)
+end
 
 function cls:OnToggleChange(go, isOn)
     logWarn('OnToggleChange')
@@ -36,7 +42,7 @@ function cls:OnToggleChange(go, isOn)
     
     local name = go.name
     if name == 'Toggle' then
-      if go.activeSelf ~= isOn then
+      if self.img_bar.activeSelf ~= isOn then
         self.img_bar:SetActive(isOn)
       end    
     end
@@ -48,7 +54,7 @@ function cls:OnButtonClick(go)
     local name = go.name
     if name == 'btn_hero' then
       uiMgr:ShowUIForms('HeroPanel')
-      self.img_bar:SetActive(false)
+      self:ResetToggleState()
     end
 end
 
@@ -71,8 +77,8 @@ function cls:RegistyEvents()
     --logWarn('MessagePanel.baseUIForm is '..type(self.baseUIForm))
     --logWarn(type(self.OnToggleChange))
     
-    self.UIEventListener:AddToggleChange(self.img_bar, self.OnToggleChange)
-    
+    self.UIEL:AddToggleChange(self.Toggle, self.OnToggleChange)
+    self.UIEL:AddButtonClick(self.btn_hero, self.OnButtonClick)
     
 end
 

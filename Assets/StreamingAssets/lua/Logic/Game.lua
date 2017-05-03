@@ -67,7 +67,7 @@ function Game.OnInitOK()
 --    end
     uiMgr:ShowUIForms('TopbarPanel')
     uiMgr:ShowUIForms('MainPanel')
-    uiMgr:ShowUIForms('RightPanel')
+    uiMgr:ShowUIForms('RightbarPanel')
     
     logWarn('LuaFramework InitOK--->>>')
 

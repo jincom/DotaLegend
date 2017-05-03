@@ -58,6 +58,9 @@ public static class DelegateFactory
 		dict.Add(typeof(System.Action<NotiData>), System_Action_NotiData);
 		dict.Add(typeof(System.Action<UnityEngine.Object[]>), System_Action_UnityEngine_Objects);
 		dict.Add(typeof(SUIFW.MessageCenter.DelMessageDelivery), SUIFW_MessageCenter_DelMessageDelivery);
+		dict.Add(typeof(LuaFramework.EventTrigger.PointerDelegate), LuaFramework_EventTrigger_PointerDelegate);
+		dict.Add(typeof(LuaFramework.EventTrigger.BaseDelegate), LuaFramework_EventTrigger_BaseDelegate);
+		dict.Add(typeof(LuaFramework.EventTrigger.AxisDelegate), LuaFramework_EventTrigger_AxisDelegate);
 	}
 
     [NoToLuaAttribute]
@@ -2127,6 +2130,153 @@ public static class DelegateFactory
 		{
 			SUIFW_MessageCenter_DelMessageDelivery_Event target = new SUIFW_MessageCenter_DelMessageDelivery_Event(func, self);
 			SUIFW.MessageCenter.DelMessageDelivery d = target.CallWithSelf;
+			target.method = d.Method;
+			return d;
+		}
+	}
+
+	class LuaFramework_EventTrigger_PointerDelegate_Event : LuaDelegate
+	{
+		public LuaFramework_EventTrigger_PointerDelegate_Event(LuaFunction func) : base(func) { }
+		public LuaFramework_EventTrigger_PointerDelegate_Event(LuaFunction func, LuaTable self) : base(func, self) { }
+
+		public void Call(UnityEngine.GameObject param0, UnityEngine.EventSystems.PointerEventData param1)
+		{
+			func.BeginPCall();
+			func.Push(param0);
+			func.PushObject(param1);
+			func.PCall();
+			func.EndPCall();
+		}
+
+		public void CallWithSelf(UnityEngine.GameObject param0, UnityEngine.EventSystems.PointerEventData param1)
+		{
+			func.BeginPCall();
+			func.Push(self);
+			func.Push(param0);
+			func.PushObject(param1);
+			func.PCall();
+			func.EndPCall();
+		}
+	}
+
+	public static Delegate LuaFramework_EventTrigger_PointerDelegate(LuaFunction func, LuaTable self, bool flag)
+	{
+		if (func == null)
+		{
+			LuaFramework.EventTrigger.PointerDelegate fn = delegate(UnityEngine.GameObject param0, UnityEngine.EventSystems.PointerEventData param1) { };
+			return fn;
+		}
+
+		if(!flag)
+		{
+			LuaFramework_EventTrigger_PointerDelegate_Event target = new LuaFramework_EventTrigger_PointerDelegate_Event(func);
+			LuaFramework.EventTrigger.PointerDelegate d = target.Call;
+			target.method = d.Method;
+			return d;
+		}
+		else
+		{
+			LuaFramework_EventTrigger_PointerDelegate_Event target = new LuaFramework_EventTrigger_PointerDelegate_Event(func, self);
+			LuaFramework.EventTrigger.PointerDelegate d = target.CallWithSelf;
+			target.method = d.Method;
+			return d;
+		}
+	}
+
+	class LuaFramework_EventTrigger_BaseDelegate_Event : LuaDelegate
+	{
+		public LuaFramework_EventTrigger_BaseDelegate_Event(LuaFunction func) : base(func) { }
+		public LuaFramework_EventTrigger_BaseDelegate_Event(LuaFunction func, LuaTable self) : base(func, self) { }
+
+		public void Call(UnityEngine.GameObject param0, UnityEngine.EventSystems.BaseEventData param1)
+		{
+			func.BeginPCall();
+			func.Push(param0);
+			func.PushObject(param1);
+			func.PCall();
+			func.EndPCall();
+		}
+
+		public void CallWithSelf(UnityEngine.GameObject param0, UnityEngine.EventSystems.BaseEventData param1)
+		{
+			func.BeginPCall();
+			func.Push(self);
+			func.Push(param0);
+			func.PushObject(param1);
+			func.PCall();
+			func.EndPCall();
+		}
+	}
+
+	public static Delegate LuaFramework_EventTrigger_BaseDelegate(LuaFunction func, LuaTable self, bool flag)
+	{
+		if (func == null)
+		{
+			LuaFramework.EventTrigger.BaseDelegate fn = delegate(UnityEngine.GameObject param0, UnityEngine.EventSystems.BaseEventData param1) { };
+			return fn;
+		}
+
+		if(!flag)
+		{
+			LuaFramework_EventTrigger_BaseDelegate_Event target = new LuaFramework_EventTrigger_BaseDelegate_Event(func);
+			LuaFramework.EventTrigger.BaseDelegate d = target.Call;
+			target.method = d.Method;
+			return d;
+		}
+		else
+		{
+			LuaFramework_EventTrigger_BaseDelegate_Event target = new LuaFramework_EventTrigger_BaseDelegate_Event(func, self);
+			LuaFramework.EventTrigger.BaseDelegate d = target.CallWithSelf;
+			target.method = d.Method;
+			return d;
+		}
+	}
+
+	class LuaFramework_EventTrigger_AxisDelegate_Event : LuaDelegate
+	{
+		public LuaFramework_EventTrigger_AxisDelegate_Event(LuaFunction func) : base(func) { }
+		public LuaFramework_EventTrigger_AxisDelegate_Event(LuaFunction func, LuaTable self) : base(func, self) { }
+
+		public void Call(UnityEngine.GameObject param0, UnityEngine.EventSystems.AxisEventData param1)
+		{
+			func.BeginPCall();
+			func.Push(param0);
+			func.PushObject(param1);
+			func.PCall();
+			func.EndPCall();
+		}
+
+		public void CallWithSelf(UnityEngine.GameObject param0, UnityEngine.EventSystems.AxisEventData param1)
+		{
+			func.BeginPCall();
+			func.Push(self);
+			func.Push(param0);
+			func.PushObject(param1);
+			func.PCall();
+			func.EndPCall();
+		}
+	}
+
+	public static Delegate LuaFramework_EventTrigger_AxisDelegate(LuaFunction func, LuaTable self, bool flag)
+	{
+		if (func == null)
+		{
+			LuaFramework.EventTrigger.AxisDelegate fn = delegate(UnityEngine.GameObject param0, UnityEngine.EventSystems.AxisEventData param1) { };
+			return fn;
+		}
+
+		if(!flag)
+		{
+			LuaFramework_EventTrigger_AxisDelegate_Event target = new LuaFramework_EventTrigger_AxisDelegate_Event(func);
+			LuaFramework.EventTrigger.AxisDelegate d = target.Call;
+			target.method = d.Method;
+			return d;
+		}
+		else
+		{
+			LuaFramework_EventTrigger_AxisDelegate_Event target = new LuaFramework_EventTrigger_AxisDelegate_Event(func, self);
+			LuaFramework.EventTrigger.AxisDelegate d = target.CallWithSelf;
 			target.method = d.Method;
 			return d;
 		}

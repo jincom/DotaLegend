@@ -1,16 +1,25 @@
 ManifestFileVersion: 0
-CRC: 536950860
+CRC: 3136575646
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: prefabs/ui/heropanel
+      Name: prefabs/ui/buttons
       Dependencies: {}
     Info_1:
-      Name: prefabs/ui/mainpanel
+      Name: prefabs/ui/herodetailpanel
       Dependencies: {}
     Info_2:
-      Name: prefabs/ui/rightbarpanel
+      Name: prefabs/ui/heropanel
       Dependencies: {}
     Info_3:
+      Name: prefabs/ui/mainpanel
+      Dependencies: {}
+    Info_4:
+      Name: prefabs/ui/packagepanel
+      Dependencies: {}
+    Info_5:
+      Name: prefabs/ui/rightbarpanel
+      Dependencies: {}
+    Info_6:
       Name: prefabs/ui/topbarpanel
       Dependencies: {}

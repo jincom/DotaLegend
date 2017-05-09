@@ -2,235 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d61e7216-60c7-4ccc-803d-dcf08c60824f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/equip/508.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/headimg/CM.jpg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/headimg/Coco.jpg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/headimg/DOTsr.jpg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/headimg/DR.jpg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/headimg/ES.jpg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/headimg/Ench.jpg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/headimg/JUGG.jpg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/headimg/Lina.jpg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/headimg/Lion.jpg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/headimg/Luna.jpg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/headimg/OD.jpg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/headimg/OK.jpg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/headimg/OM.jpg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/headimg/Panda.jpg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/headimg/Pugna.jpg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/headimg/Razor.jpg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s100.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s102.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s103.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s110.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s112.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s113.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s114.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s120.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s122.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s123.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s124.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s130.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s132.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s133.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s134.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s140.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s142.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s143.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s150.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s152.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s153.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s154.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s160.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s162.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s163.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s164.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s170.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s173.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s174.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s180.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s182.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s183.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s184.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s190.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s192.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s194.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s195.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s200.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s202.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s204.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s205.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s210.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s212.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s213.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s214.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s220.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s222.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s223.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s224.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s23.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s230.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s232.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s234.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s235.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s24.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s240.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s242.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s252.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s260.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s262.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s263.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s264.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s270.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s272.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s273.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s274.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s280.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s282.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s283.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s284.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s290.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s292.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s293.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s294.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s30.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s300.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s302.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s310.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s312.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s313.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s314.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s32.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s320.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s322.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s323.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s324.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s330.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s332.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s333.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s334.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s34.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s340.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s342.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s343.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s344.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s350.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s352.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s353.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s354.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s360.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s362.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s363.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s372.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s375.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s380.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s382.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s383.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s384.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s390.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s392.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s393.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s394.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s400.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s402.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s403.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s404.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s412.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s413.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s414.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s42.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s420.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s423.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s424.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s430.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s432.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s433.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s434.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s435.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s44.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s440.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s442.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s443.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s450.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s452.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s453.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s454.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s462.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s463.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s470.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s472.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s473.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s474.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s52.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s53.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s54.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s60.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s62.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s63.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s64.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s70.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s72.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s73.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s74.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s80.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s82.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s83.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s84.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s90.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s92.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s93.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/skill/s94.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/bigmask.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/herodetail-detail-close-p.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/herodetail-detail-close.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../.vs/DotaLegend/v14/.suo" afterPath="$PROJECT_DIR$/../../.vs/DotaLegend/v14/.suo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/StreamingAssets" afterPath="$PROJECT_DIR$/../StreamingAssets/StreamingAssets" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/herodetailpanel" afterPath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/herodetailpanel" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/heropanel" afterPath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/heropanel" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AssetBundle/Prefabs/UI/HeroDetailPanel/HeroDetailPanel.prefab" afterPath="$PROJECT_DIR$/AssetBundle/Prefabs/UI/HeroDetailPanel/HeroDetailPanel.prefab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Editor/CustomSettings.cs" afterPath="$PROJECT_DIR$/Editor/CustomSettings.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/Common/functions.lua" afterPath="$PROJECT_DIR$/Lua/Common/functions.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/Common/protocal.lua" afterPath="$PROJECT_DIR$/Lua/Common/protocal.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/Logic/Game.lua" afterPath="$PROJECT_DIR$/Lua/Logic/Game.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/View/BasePanel.lua" afterPath="$PROJECT_DIR$/Lua/View/BasePanel.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/View/HeroPanel.lua" afterPath="$PROJECT_DIR$/Lua/View/HeroPanel.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/View/MainPanel.lua" afterPath="$PROJECT_DIR$/Lua/View/MainPanel.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scenes/Test.unity" afterPath="$PROJECT_DIR$/Scenes/Test.unity" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/Common/EventTrigger.cs" afterPath="$PROJECT_DIR$/Scripts/Common/EventTrigger.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/Manager/LuaManager.cs" afterPath="$PROJECT_DIR$/Scripts/Manager/LuaManager.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua" afterPath="$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/Utility/Util.cs" afterPath="$PROJECT_DIR$/Scripts/Utility/Util.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/TestDoTween.cs" afterPath="$PROJECT_DIR$/Test/TestDoTween.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ToLua/Core/LuaState.cs" afterPath="$PROJECT_DIR$/ToLua/Core/LuaState.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ToLua/Source/Generate/DelegateFactory.cs" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/DelegateFactory.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ToLua/Source/Generate/LuaBinder.cs" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/LuaBinder.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ToLua/Source/Generate/LuaFramework_UtilWrap.cs" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/LuaFramework_UtilWrap.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ToLua/Source/Generate/UnityEngine_UI_GraphicWrap.cs" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/UnityEngine_UI_GraphicWrap.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ToLua/Source/Generate/UnityEngine_UI_ImageWrap.cs" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/UnityEngine_UI_ImageWrap.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/StreamingAssets.manifest" afterPath="$PROJECT_DIR$/../StreamingAssets/StreamingAssets.manifest" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/files.txt" afterPath="$PROJECT_DIR$/../StreamingAssets/files.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/Common/functions.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/Common/functions.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/Common/protocal.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/Common/protocal.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/Logic/Game.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/Logic/Game.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/View/BasePanel.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/View/BasePanel.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/View/HeroPanel.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/View/HeroPanel.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/View/MainPanel.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/View/MainPanel.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/buttons.manifest" afterPath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/buttons.manifest" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/herodetailpanel.manifest" afterPath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/herodetailpanel.manifest" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/heropanel.manifest" afterPath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/heropanel.manifest" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/packagepanel.manifest" afterPath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/packagepanel.manifest" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../DotaLegend.csproj" afterPath="$PROJECT_DIR$/../../DotaLegend.csproj" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -248,7 +24,7 @@
       <file leaf-file-name="HeroPanel.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lua/View/HeroPanel.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
+            <state relative-caret-position="4575">
               <caret line="183" column="76" lean-forward="false" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="76" />
               <folding />
             </state>
@@ -258,7 +34,7 @@
       <file leaf-file-name="BasePanel.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lua/View/BasePanel.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
+            <state relative-caret-position="1550">
               <caret line="62" column="6" lean-forward="false" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
               <folding />
             </state>
@@ -278,8 +54,8 @@
       <file leaf-file-name="HeroDetailPanel.lua" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+            <state relative-caret-position="75">
+              <caret line="118" column="18" lean-forward="true" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -288,7 +64,7 @@
       <file leaf-file-name="functions.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lua/Common/functions.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
+            <state relative-caret-position="1700">
               <caret line="68" column="22" lean-forward="false" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
               <folding />
             </state>
@@ -298,7 +74,7 @@
       <file leaf-file-name="HERO_SKILLS.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lua/Data/HERO_SKILLS.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1300">
+            <state relative-caret-position="100">
               <caret line="77" column="6" lean-forward="false" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
               <folding />
             </state>
@@ -328,7 +104,7 @@
       <file leaf-file-name="MainPanel.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lua/View/MainPanel.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
+            <state relative-caret-position="625">
               <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
@@ -398,8 +174,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -458,49 +235,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Logic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LuaFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LuaFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lua" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LuaFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LuaFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lua" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -772,7 +512,6 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12851563" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23210071" sideWeight="0.4984375" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19375" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -784,6 +523,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23210071" sideWeight="0.4984375" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -807,11 +547,90 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Lua/Logic/Game.lua">
+    <entry file="file://$PROJECT_DIR$/Lua/View/HeroPanel.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4575">
+          <caret line="183" column="76" lean-forward="false" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/View/BasePanel.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1550">
+          <caret line="62" column="6" lean-forward="false" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/View/TestMoudle.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/Common/functions.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="68" column="22" lean-forward="false" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/Data/HERO_SKILLS.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1925">
+          <caret line="77" column="6" lean-forward="false" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/Data/HERO_INFO.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/Common/protocal.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/View/MainPanel.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/View/MessagePanel.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/Logic/Game.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -827,7 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -835,7 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -843,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -851,7 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,7 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -867,49 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1494312417540" expanded="true" signature="79984:80026" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="79984:80044" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="79984:80057" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="79984:80072" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80107:82562" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80120:82547" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80174:80469" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80193:80454" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80256:80434" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80296:80400" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80317:80378" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80519:80846" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80538:80831" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80633:80811" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80673:80777" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80694:80755" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80897:81162" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80916:81147" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80949:81127" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80989:81093" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81010:81071" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81205:81511" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81224:81496" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81298:81476" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81338:81442" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81359:81420" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81562:81916" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81581:81901" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81664:81881" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81704:81847" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81725:81825" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81951:82216" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81970:82201" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="82003:82181" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="82043:82147" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="82064:82125" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="82268:82533" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="82287:82518" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="82320:82498" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="82360:82464" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="82381:82442" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1018,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1026,7 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1034,7 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1042,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1050,7 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,7 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1066,55 +831,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1494312417540" expanded="true" signature="79984:80026" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="79984:80044" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="79984:80057" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="79984:80072" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80107:82562" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80120:82547" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80174:80469" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80193:80454" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80256:80434" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80296:80400" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80317:80378" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80519:80846" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80538:80831" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80633:80811" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80673:80777" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80694:80755" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80897:81162" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80916:81147" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80949:81127" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="80989:81093" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81010:81071" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81205:81511" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81224:81496" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81298:81476" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81338:81442" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81359:81420" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81562:81916" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81581:81901" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81664:81881" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81704:81847" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81725:81825" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81951:82216" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="81970:82201" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="82003:82181" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="82043:82147" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="82064:82125" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="82268:82533" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="82287:82518" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="82320:82498" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="82360:82464" ph="..." />
-            <marker date="1494312417540" expanded="true" signature="82381:82442" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lua/Common/functions.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
+        <state relative-caret-position="1700">
           <caret line="68" column="22" lean-forward="false" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
           <folding />
         </state>
@@ -1146,7 +868,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lua/View/MainPanel.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
+        <state relative-caret-position="625">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
@@ -1162,32 +884,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lua/View/BasePanel.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
+        <state relative-caret-position="1550">
           <caret line="62" column="6" lean-forward="false" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/Data/HERO_SKILLS.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1300">
-          <caret line="77" column="6" lean-forward="false" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lua/View/HeroPanel.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
+        <state relative-caret-position="4575">
           <caret line="183" column="76" lean-forward="false" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/Data/HERO_SKILLS.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="77" column="6" lean-forward="false" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        <state relative-caret-position="75">
+          <caret line="118" column="18" lean-forward="true" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
           <folding />
         </state>
       </provider>

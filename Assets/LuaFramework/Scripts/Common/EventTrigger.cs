@@ -24,14 +24,20 @@ namespace LuaFramework
     ISubmitHandler,
     ICancelHandler
     {
+
         private bool m_IsPassEvent;
+        //是否把没监听的事件接口渗透到父物体
         public bool IsPassEvent
         {
             get { return m_IsPassEvent; }
             set { m_IsPassEvent = value; }
         }
+
+        //BaseEventData参数类型委托
         public delegate void BaseDelegate(GameObject go, BaseEventData data);
+        //AxisEventData参数类型委托
         public delegate void AxisDelegate(GameObject go, AxisEventData data);
+        //AxisEventData参数类型委托
         public delegate void PointerDelegate(GameObject go, PointerEventData data);
 
         public event PointerDelegate onEnter;
@@ -65,12 +71,27 @@ namespace LuaFramework
             return trigger;
         }
 
+        //把事件传递给父节点
+        protected void PassEvent<T>
+            (BaseEventData data, ExecuteEvents.EventFunction<T> callback)
+            where T : IEventSystemHandler
+        {
+            if (!m_IsPassEvent) return;
+
+            Transform parent = transform.parent;
+            if (parent == null) return;
+            //把事件发送到某个GameObject执行，会一直往父物体传递，直到事件被拦截
+            ExecuteEvents.ExecuteHierarchy<T>(parent.gameObject, data, callback);
+        }
+
         public void OnBeginDrag(PointerEventData eventData)
         {
+            //不为null说明被监听了，拦截事件
             if (onBeginDrag != null)
             {
                 onBeginDrag(gameObject, eventData);
             }
+            //不然传递事件给父物体
             else
             {
                 PassEvent<IBeginDragHandler>(eventData, ExecuteEvents.beginDragHandler);
@@ -269,18 +290,6 @@ namespace LuaFramework
             }
         }
 
-        //把事件传递给父节点
-        protected void PassEvent<T>
-            (BaseEventData data, ExecuteEvents.EventFunction<T> callback) 
-            where T : IEventSystemHandler
-        {
-            if (!m_IsPassEvent) return;
-
-            Transform parent = transform.parent;
-            if (parent == null) return;
-
-            ExecuteEvents.ExecuteHierarchy<T>(parent.gameObject, data, callback);
-        }
     }
 
 }

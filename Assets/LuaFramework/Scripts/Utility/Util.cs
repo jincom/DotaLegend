@@ -205,6 +205,45 @@ namespace LuaFramework
             return tran.gameObject;
         }
 
+        ///<summary>
+        ///设置位置
+        ///</summary>
+        public static void SetLocalPosition(GameObject target, Vector3 pos)
+        {
+            if (target == null) return;
+
+            target.transform.localPosition = pos;
+        }
+
+        public static void SetLocalPosition(GameObject target, float x, float y, float z)
+        {
+            SetLocalPosition(target, new Vector3(x, y, z));
+        }
+
+        public static Vector3 GetLocalPosition(GameObject target)
+        {
+            if (target == null) return Vector3.zero;
+
+            return target.transform.localPosition;
+        }
+
+        public static void SetAnchorsPos(GameObject target, Vector2 pos)
+        {
+            if (target == null) return;
+            RectTransform rect = target.transform as RectTransform;
+            if (rect == null) return;
+            rect.anchoredPosition = pos;
+        }
+
+        public static Vector2 GetAnchorsPos(GameObject target)
+        {
+            if (target == null) return Vector2.zero;
+            RectTransform rect = target.transform as RectTransform;
+            if (rect == null) return Vector2.zero;
+            return rect.anchoredPosition;
+        }
+
+
         /// <summary>
         /// 计算字符串的MD5值
         /// </summary>

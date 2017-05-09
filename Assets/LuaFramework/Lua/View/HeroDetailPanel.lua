@@ -112,18 +112,18 @@ function M:FunctionDefine()
   end
   -----------onShillItemDown---------------------------
   self.onSkillItemDown = function(go, data)
-    print('onSkillItemDown')
+    --print('onSkillItemDown')
     if not isuserdata(go) then return end
     Util.SetParent(self.description, go)
-
-    local position = self.description.transform.localPosition
+    local position = Util.GetAnchorsPos(self.description)
     position.y = 0
-    self.description.transform.localPosition = position
+    Util.SetAnchorsPos(self.description, position)
     self.description:SetActive(true)
+    Util.Child(self.description, "text1"):GetComponent(typeof(Text)).text = self.hero_info[self.i_select_hero_index].skills.SKILL_DESCRIPTION
   end
   ------------onSkillItemUp--------------------------------
   self.onSkillItemUp = function(go, data)
-    print('onSkillItemDown')
+    --print('onSkillItemUp')
     self.description:SetActive(false)
   end
 

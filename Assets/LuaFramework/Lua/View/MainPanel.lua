@@ -20,7 +20,7 @@ function cls:ctor(go)
 end
 
 function cls:Awake()
- 
+
 end
 
 
@@ -41,7 +41,7 @@ end
 
 --注册点击监听事件--
 function cls:RegistyEvents()
-
+  
     
 end
 

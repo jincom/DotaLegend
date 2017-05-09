@@ -47,6 +47,8 @@ function Game.OnInitOK()
    -- require("debugger")("127.0.0.1",10001, "")
 
     networkMgr:SendConnect();
+    
+    
 
     --注册LuaView--
     --this.InitViewPanels();

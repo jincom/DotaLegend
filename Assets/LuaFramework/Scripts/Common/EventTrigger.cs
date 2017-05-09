@@ -56,6 +56,7 @@ namespace LuaFramework
 
         public static EventTrigger Get(GameObject go)
         {
+            if (go == null) return null;
             EventTrigger trigger = go.GetComponent<EventTrigger>();
             if (trigger == null)
             {

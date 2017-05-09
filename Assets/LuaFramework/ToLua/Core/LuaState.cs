@@ -375,10 +375,10 @@ namespace LuaInterface
                 {
                     str = str.Substring(0, pos);
                 }
-
+                
                 return str;
             }
-
+            //Debug.Log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ToLuaTypeName: " + t.Name);
             return t.Name;
         }
 

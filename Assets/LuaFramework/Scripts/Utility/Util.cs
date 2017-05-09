@@ -115,6 +115,37 @@ namespace LuaFramework
             return Add<T>(go.gameObject);
         }
 
+        public static void SetParent(GameObject child, GameObject parent)
+        {
+            if (child == null) return;
+
+            Transform tparent = null;
+            if (parent != null) tparent = parent.transform;
+
+            SetParent(child.transform, tparent);
+        }
+
+        public static void SetParent(GameObject child, Transform parent)
+        {
+            if (child == null) return;
+            SetParent(child.transform, parent);
+        }
+
+        public static void SetParent(Transform child, GameObject parent)
+        {
+            Transform tparent = null;
+            if (parent != null) tparent = parent.transform;
+
+            SetParent(child, tparent);
+        }
+
+        public static void SetParent(Transform child, Transform parent)
+        {
+            if (child == null) return;
+
+            child.SetParent(parent);
+        }
+
         /// <summary>
         /// 查找子对象
         /// </summary>
@@ -128,9 +159,32 @@ namespace LuaFramework
         /// </summary>
         public static GameObject Child(Transform go, string subnode)
         {
+            if (go == null) return null;
             Transform tran = go.FindChild(subnode);
             if (tran == null) return null;
             return tran.gameObject;
+        }
+
+        ///<summary>
+        ///获取所有一级子对象
+        ///</summary>
+        public static GameObject[] Childs(GameObject go)
+        {
+            if (go == null) return null;
+            return Childs(go.transform);
+        }
+
+        public static GameObject[] Childs(Transform tran)
+        {
+            if (tran == null) return null;
+            int count = tran.GetChildCount();
+
+            GameObject[] childs = new GameObject[count];
+            for (int i = 0; i < count; i++)
+            {
+                childs[i] = tran.GetChild(i).gameObject;
+            }
+            return childs;
         }
 
         /// <summary>
@@ -166,6 +220,29 @@ namespace LuaFramework
             }
             destString = destString.PadLeft(32, '0');
             return destString;
+        }
+
+        public static void SetMaskableInChild(GameObject root, bool maskable)
+        {
+            UnityEngine.UI.MaskableGraphic[] graphics =
+                root.GetComponentsInChildren<UnityEngine.UI.MaskableGraphic>();
+
+            for (int i = 0; i < graphics.Length; i++)
+            {
+                if (graphics[i].maskable == maskable)
+                    continue;
+
+                graphics[i].maskable = maskable;
+            }
+        }
+
+        public static void SetMaskable(GameObject target, bool maskable)
+        {
+            UnityEngine.UI.MaskableGraphic graphic =
+                target.GetComponent<UnityEngine.UI.MaskableGraphic>();
+
+            if (graphic == null || graphic.maskable == maskable) return;
+            graphic.maskable = maskable;
         }
 
         /// <summary>

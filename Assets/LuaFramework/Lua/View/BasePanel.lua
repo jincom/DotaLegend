@@ -28,33 +28,39 @@ function cls:RegistyEvents()
     logWarn('BasePanel RegistyEvent')
 end
 
+function cls:FunctionDefine()
+
+end
+
 --初始化函数
 function cls:OnInitialize()
-    logWarn('BasePanel OnInitialize')
+    --logWarn('BasePanel OnInitialize')
+
+    self:FunctionDefine()
     self:RegistyEvents()
 end
 
 --显示窗体方法
 function cls:Display()
-    logWarn('BasePanel Display')
+    --logWarn('BasePanel Display')
     self.gameObject:SetActive(true)
 end
 
 --隐藏窗体方法
 function cls:Hiding()
-    logWarn('BasePanel Hiding')
+    --logWarn('BasePanel Hiding')
     self.gameObject:SetActive(false)
 end
 
 --重新显示方法
 function cls:Redisplay()
-    logWarn('BasePanel Redisplay')
+    --logWarn('BasePanel Redisplay')
     self.gameObject:SetActive(true)
 end
 
 --冻结窗体方法
 function cls:Freeze()
-    logWarn('BasePanel Freeze')
+    --logWarn('BasePanel Freeze')
 end
 
 --封装子类常用方法
@@ -81,7 +87,7 @@ end
 
 --广播Panel事件
 function cls:BrocastEvent(event_name, ...)
-    EventCenter.Brocast(event_name, self, ...)
+    EventCenter.Brocast(event_name, ...)
 end
 
 --反注册Panel事件

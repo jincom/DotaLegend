@@ -172,6 +172,7 @@
     <Compile Include="Assets\LuaFramework\Test\TestDoTween.cs" />
     <Compile Include="Assets\LuaFramework\Test\TestLayout.cs" />
     <Compile Include="Assets\LuaFramework\Test\TestWWWDownTexture.cs" />
+    <Compile Include="Assets\LuaFramework\Test\Texture\TestGraphic.cs" />
     <Compile Include="Assets\LuaFramework\ToLua\BaseType\LuaInterface_EventObjectWrap.cs" />
     <Compile Include="Assets\LuaFramework\ToLua\BaseType\LuaInterface_LuaConstructorWrap.cs" />
     <Compile Include="Assets\LuaFramework\ToLua\BaseType\LuaInterface_LuaFieldWrap.cs" />
@@ -370,6 +371,7 @@
     <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_UI_ImageWrap.cs" />
     <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_UI_LayoutGroupWrap.cs" />
     <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_UI_MaskableGraphicWrap.cs" />
+    <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_UI_RawImageWrap.cs" />
     <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_UI_ScrollRectWrap.cs" />
     <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_UI_SelectableWrap.cs" />
     <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_UI_SliderWrap.cs" />

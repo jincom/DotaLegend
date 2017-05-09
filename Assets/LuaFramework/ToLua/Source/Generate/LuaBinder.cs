@@ -23,6 +23,8 @@ public static class LuaBinder
 		DG_Tweening_PathModeWrap.Register(L);
 		DG_Tweening_PathTypeWrap.Register(L);
 		DG_Tweening_RotateModeWrap.Register(L);
+		L.RegFunction("TweenCallback", DG_Tweening_TweenCallback);
+		L.RegFunction("TweenCallback_UnityEngine_GameObject", DG_Tweening_TweenCallback_UnityEngine_GameObject);
 		L.BeginModule("Core");
 		TweenerCoreV3V3VOWrap.Register(L);
 		L.RegFunction("DOGetter_float", DG_Tweening_Core_DOGetter_float);
@@ -100,13 +102,10 @@ public static class LuaBinder
 		UnityEngine_CanvasGroupWrap.Register(L);
 		UnityEngine_RenderModeWrap.Register(L);
 		UnityEngine_GUILayerWrap.Register(L);
-		L.BeginModule("Experimental");
-		L.BeginModule("Director");
-		UnityEngine_Experimental_Director_DirectorPlayerWrap.Register(L);
-		L.EndModule();
-		L.EndModule();
 		L.BeginModule("UI");
+		UnityEngine_UI_GraphicWrap.Register(L);
 		UnityEngine_UI_ImageWrap.Register(L);
+		UnityEngine_UI_RawImageWrap.Register(L);
 		UnityEngine_UI_ButtonWrap.Register(L);
 		UnityEngine_UI_ToggleWrap.Register(L);
 		UnityEngine_UI_ToggleGroupWrap.Register(L);
@@ -119,13 +118,17 @@ public static class LuaBinder
 		UnityEngine_UI_CanvasScalerWrap.Register(L);
 		UnityEngine_UI_GraphicRaycasterWrap.Register(L);
 		UnityEngine_UI_MaskableGraphicWrap.Register(L);
-		UnityEngine_UI_GraphicWrap.Register(L);
 		UnityEngine_UI_SelectableWrap.Register(L);
 		UnityEngine_UI_LayoutGroupWrap.Register(L);
 		UnityEngine_UI_HorizontalOrVerticalLayoutGroupWrap.Register(L);
 		L.BeginModule("CanvasScaler");
 		UnityEngine_UI_CanvasScaler_ScaleModeWrap.Register(L);
 		UnityEngine_UI_CanvasScaler_ScreenMatchModeWrap.Register(L);
+		L.EndModule();
+		L.EndModule();
+		L.BeginModule("Experimental");
+		L.BeginModule("Director");
+		UnityEngine_Experimental_Director_DirectorPlayerWrap.Register(L);
 		L.EndModule();
 		L.EndModule();
 		L.BeginModule("EventSystems");
@@ -213,6 +216,60 @@ public static class LuaBinder
 		L.AddPreLoad("UnityEngine.Rigidbody", LuaOpen_UnityEngine_Rigidbody, typeof(UnityEngine.Rigidbody));
 		L.EndPreLoad();
 		Debugger.Log("Register lua type cost time: {0}", Time.realtimeSinceStartup - t);
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int DG_Tweening_TweenCallback(IntPtr L)
+	{
+		try
+		{
+			int count = LuaDLL.lua_gettop(L);
+			LuaFunction func = ToLua.CheckLuaFunction(L, 1);
+
+			if (count == 1)
+			{
+				Delegate arg1 = DelegateFactory.CreateDelegate(typeof(DG.Tweening.TweenCallback), func);
+				ToLua.Push(L, arg1);
+			}
+			else
+			{
+				LuaTable self = ToLua.CheckLuaTable(L, 2);
+				Delegate arg1 = DelegateFactory.CreateDelegate(typeof(DG.Tweening.TweenCallback), func, self);
+				ToLua.Push(L, arg1);
+			}
+			return 1;
+		}
+		catch(Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int DG_Tweening_TweenCallback_UnityEngine_GameObject(IntPtr L)
+	{
+		try
+		{
+			int count = LuaDLL.lua_gettop(L);
+			LuaFunction func = ToLua.CheckLuaFunction(L, 1);
+
+			if (count == 1)
+			{
+				Delegate arg1 = DelegateFactory.CreateDelegate(typeof(DG.Tweening.TweenCallback<UnityEngine.GameObject>), func);
+				ToLua.Push(L, arg1);
+			}
+			else
+			{
+				LuaTable self = ToLua.CheckLuaTable(L, 2);
+				Delegate arg1 = DelegateFactory.CreateDelegate(typeof(DG.Tweening.TweenCallback<UnityEngine.GameObject>), func, self);
+				ToLua.Push(L, arg1);
+			}
+			return 1;
+		}
+		catch(Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]

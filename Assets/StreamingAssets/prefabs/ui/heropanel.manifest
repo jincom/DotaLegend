@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 479031519
+CRC: 3857499385
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 583766a875a7be6a04b5594c06da1693
+    Hash: 5712923b2d1278c82b91454468d6856f
   TypeTreeHash:
     serializedVersion: 2
     Hash: cf7d2244db8cd936435742e9f0dc21d7
@@ -48,4 +48,5 @@ ClassTypes:
 Assets:
 - Assets/LuaFramework/AssetBundle/Prefabs/UI/HeroPanel/heroitem.prefab
 - Assets/LuaFramework/AssetBundle/Prefabs/UI/HeroPanel/HeroPanel.prefab
-Dependencies: []
+Dependencies:
+- D:/Github/DotaLegend/Assets/StreamingAssets/textrues/altas/headimg

@@ -48,3 +48,29 @@ function findPanel(str)
 	end
 	return obj:GetComponent("BaseLua");
 end
+
+--类型判断
+function istable(var)
+	return type(var) == 'table'
+end
+
+function isstring(var)
+	return type(var) == 'string'
+end
+
+function isnumber(var)
+	return type(var) == 'number'
+end
+
+function isboolean(var)
+	return type(var) == 'boolean'
+end
+
+function isthread(var)
+	return type(var) == 'thread'
+end
+
+function isuserdata(var)
+	return type(var) == 'userdata'
+end
+

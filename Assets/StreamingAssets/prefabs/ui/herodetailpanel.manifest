@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1509047379
+CRC: 1164245563
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: e00e8806cc34112eb13738c91343b5ff
+    Hash: 9ee7fc370cc443cb1c3a9530dd0b151d
   TypeTreeHash:
     serializedVersion: 2
-    Hash: d7ef70f3191372aa90670ab783c2ecc4
+    Hash: e1c71cd5e32b51ea2cc330a8db2e4eba
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -27,6 +27,8 @@ ClassTypes:
   Script: {fileID: -405508275, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 - Class: 114
   Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 - Class: 114
   Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 - Class: 114
@@ -53,4 +55,5 @@ ClassTypes:
   Script: {instanceID: 0}
 Assets:
 - Assets/LuaFramework/AssetBundle/Prefabs/UI/HeroDetailPanel/HeroDetailPanel.prefab
-Dependencies: []
+Dependencies:
+- D:/Github/DotaLegend/Assets/StreamingAssets/textrues/altas/skill

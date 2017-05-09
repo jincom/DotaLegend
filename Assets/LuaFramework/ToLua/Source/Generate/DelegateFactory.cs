@@ -22,6 +22,8 @@ public static class DelegateFactory
 		dict.Add(typeof(System.Predicate<int>), System_Predicate_int);
 		dict.Add(typeof(System.Action<int>), System_Action_int);
 		dict.Add(typeof(System.Comparison<int>), System_Comparison_int);
+		dict.Add(typeof(DG.Tweening.TweenCallback), DG_Tweening_TweenCallback);
+		dict.Add(typeof(DG.Tweening.TweenCallback<UnityEngine.GameObject>), DG_Tweening_TweenCallback_UnityEngine_GameObject);
 		dict.Add(typeof(DG.Tweening.Core.DOGetter<float>), DG_Tweening_Core_DOGetter_float);
 		dict.Add(typeof(DG.Tweening.Core.DOSetter<float>), DG_Tweening_Core_DOSetter_float);
 		dict.Add(typeof(DG.Tweening.Core.DOGetter<int>), DG_Tweening_Core_DOGetter_int);
@@ -408,6 +410,96 @@ public static class DelegateFactory
 		{
 			System_Comparison_int_Event target = new System_Comparison_int_Event(func, self);
 			System.Comparison<int> d = target.CallWithSelf;
+			target.method = d.Method;
+			return d;
+		}
+	}
+
+	class DG_Tweening_TweenCallback_Event : LuaDelegate
+	{
+		public DG_Tweening_TweenCallback_Event(LuaFunction func) : base(func) { }
+		public DG_Tweening_TweenCallback_Event(LuaFunction func, LuaTable self) : base(func, self) { }
+
+		public void Call()
+		{
+			func.Call();
+		}
+
+		public void CallWithSelf()
+		{
+			func.BeginPCall();
+			func.Push(self);
+			func.PCall();
+			func.EndPCall();
+		}
+	}
+
+	public static Delegate DG_Tweening_TweenCallback(LuaFunction func, LuaTable self, bool flag)
+	{
+		if (func == null)
+		{
+			DG.Tweening.TweenCallback fn = delegate() { };
+			return fn;
+		}
+
+		if(!flag)
+		{
+			DG_Tweening_TweenCallback_Event target = new DG_Tweening_TweenCallback_Event(func);
+			DG.Tweening.TweenCallback d = target.Call;
+			target.method = d.Method;
+			return d;
+		}
+		else
+		{
+			DG_Tweening_TweenCallback_Event target = new DG_Tweening_TweenCallback_Event(func, self);
+			DG.Tweening.TweenCallback d = target.CallWithSelf;
+			target.method = d.Method;
+			return d;
+		}
+	}
+
+	class DG_Tweening_TweenCallback_UnityEngine_GameObject_Event : LuaDelegate
+	{
+		public DG_Tweening_TweenCallback_UnityEngine_GameObject_Event(LuaFunction func) : base(func) { }
+		public DG_Tweening_TweenCallback_UnityEngine_GameObject_Event(LuaFunction func, LuaTable self) : base(func, self) { }
+
+		public void Call(UnityEngine.GameObject param0)
+		{
+			func.BeginPCall();
+			func.Push(param0);
+			func.PCall();
+			func.EndPCall();
+		}
+
+		public void CallWithSelf(UnityEngine.GameObject param0)
+		{
+			func.BeginPCall();
+			func.Push(self);
+			func.Push(param0);
+			func.PCall();
+			func.EndPCall();
+		}
+	}
+
+	public static Delegate DG_Tweening_TweenCallback_UnityEngine_GameObject(LuaFunction func, LuaTable self, bool flag)
+	{
+		if (func == null)
+		{
+			DG.Tweening.TweenCallback<UnityEngine.GameObject> fn = delegate(UnityEngine.GameObject param0) { };
+			return fn;
+		}
+
+		if(!flag)
+		{
+			DG_Tweening_TweenCallback_UnityEngine_GameObject_Event target = new DG_Tweening_TweenCallback_UnityEngine_GameObject_Event(func);
+			DG.Tweening.TweenCallback<UnityEngine.GameObject> d = target.Call;
+			target.method = d.Method;
+			return d;
+		}
+		else
+		{
+			DG_Tweening_TweenCallback_UnityEngine_GameObject_Event target = new DG_Tweening_TweenCallback_UnityEngine_GameObject_Event(func, self);
+			DG.Tweening.TweenCallback<UnityEngine.GameObject> d = target.CallWithSelf;
 			target.method = d.Method;
 			return d;
 		}

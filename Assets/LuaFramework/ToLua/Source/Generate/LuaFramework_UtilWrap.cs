@@ -13,9 +13,13 @@ public class LuaFramework_UtilWrap
 		L.RegFunction("Random", Random);
 		L.RegFunction("Uid", Uid);
 		L.RegFunction("GetTime", GetTime);
+		L.RegFunction("SetParent", SetParent);
 		L.RegFunction("Child", Child);
+		L.RegFunction("Childs", Childs);
 		L.RegFunction("Peer", Peer);
 		L.RegFunction("md5", md5);
+		L.RegFunction("SetMaskableInChild", SetMaskableInChild);
+		L.RegFunction("SetMaskable", SetMaskable);
 		L.RegFunction("md5file", md5file);
 		L.RegFunction("ClearChild", ClearChild);
 		L.RegFunction("ClearMemory", ClearMemory);
@@ -180,6 +184,52 @@ public class LuaFramework_UtilWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int SetParent(IntPtr L)
+	{
+		try
+		{
+			int count = LuaDLL.lua_gettop(L);
+
+			if (count == 2 && TypeChecker.CheckTypes(L, 1, typeof(UnityEngine.Transform), typeof(UnityEngine.GameObject)))
+			{
+				UnityEngine.Transform arg0 = (UnityEngine.Transform)ToLua.ToObject(L, 1);
+				UnityEngine.GameObject arg1 = (UnityEngine.GameObject)ToLua.ToObject(L, 2);
+				LuaFramework.Util.SetParent(arg0, arg1);
+				return 0;
+			}
+			else if (count == 2 && TypeChecker.CheckTypes(L, 1, typeof(UnityEngine.Transform), typeof(UnityEngine.Transform)))
+			{
+				UnityEngine.Transform arg0 = (UnityEngine.Transform)ToLua.ToObject(L, 1);
+				UnityEngine.Transform arg1 = (UnityEngine.Transform)ToLua.ToObject(L, 2);
+				LuaFramework.Util.SetParent(arg0, arg1);
+				return 0;
+			}
+			else if (count == 2 && TypeChecker.CheckTypes(L, 1, typeof(UnityEngine.GameObject), typeof(UnityEngine.GameObject)))
+			{
+				UnityEngine.GameObject arg0 = (UnityEngine.GameObject)ToLua.ToObject(L, 1);
+				UnityEngine.GameObject arg1 = (UnityEngine.GameObject)ToLua.ToObject(L, 2);
+				LuaFramework.Util.SetParent(arg0, arg1);
+				return 0;
+			}
+			else if (count == 2 && TypeChecker.CheckTypes(L, 1, typeof(UnityEngine.GameObject), typeof(UnityEngine.Transform)))
+			{
+				UnityEngine.GameObject arg0 = (UnityEngine.GameObject)ToLua.ToObject(L, 1);
+				UnityEngine.Transform arg1 = (UnityEngine.Transform)ToLua.ToObject(L, 2);
+				LuaFramework.Util.SetParent(arg0, arg1);
+				return 0;
+			}
+			else
+			{
+				return LuaDLL.luaL_throw(L, "invalid arguments to method: LuaFramework.Util.SetParent");
+			}
+		}
+		catch(Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static int Child(IntPtr L)
 	{
 		try
@@ -205,6 +255,38 @@ public class LuaFramework_UtilWrap
 			else
 			{
 				return LuaDLL.luaL_throw(L, "invalid arguments to method: LuaFramework.Util.Child");
+			}
+		}
+		catch(Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int Childs(IntPtr L)
+	{
+		try
+		{
+			int count = LuaDLL.lua_gettop(L);
+
+			if (count == 1 && TypeChecker.CheckTypes(L, 1, typeof(UnityEngine.Transform)))
+			{
+				UnityEngine.Transform arg0 = (UnityEngine.Transform)ToLua.ToObject(L, 1);
+				UnityEngine.GameObject[] o = LuaFramework.Util.Childs(arg0);
+				ToLua.Push(L, o);
+				return 1;
+			}
+			else if (count == 1 && TypeChecker.CheckTypes(L, 1, typeof(UnityEngine.GameObject)))
+			{
+				UnityEngine.GameObject arg0 = (UnityEngine.GameObject)ToLua.ToObject(L, 1);
+				UnityEngine.GameObject[] o = LuaFramework.Util.Childs(arg0);
+				ToLua.Push(L, o);
+				return 1;
+			}
+			else
+			{
+				return LuaDLL.luaL_throw(L, "invalid arguments to method: LuaFramework.Util.Childs");
 			}
 		}
 		catch(Exception e)
@@ -257,6 +339,40 @@ public class LuaFramework_UtilWrap
 			string o = LuaFramework.Util.md5(arg0);
 			LuaDLL.lua_pushstring(L, o);
 			return 1;
+		}
+		catch(Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int SetMaskableInChild(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 2);
+			UnityEngine.GameObject arg0 = (UnityEngine.GameObject)ToLua.CheckUnityObject(L, 1, typeof(UnityEngine.GameObject));
+			bool arg1 = LuaDLL.luaL_checkboolean(L, 2);
+			LuaFramework.Util.SetMaskableInChild(arg0, arg1);
+			return 0;
+		}
+		catch(Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int SetMaskable(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 2);
+			UnityEngine.GameObject arg0 = (UnityEngine.GameObject)ToLua.CheckUnityObject(L, 1, typeof(UnityEngine.GameObject));
+			bool arg1 = LuaDLL.luaL_checkboolean(L, 2);
+			LuaFramework.Util.SetMaskable(arg0, arg1);
+			return 0;
 		}
 		catch(Exception e)
 		{

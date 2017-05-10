@@ -177,10 +177,14 @@ public static class LuaBinder
 		LuaFramework_ResourceManagerWrap.Register(L);
 		LuaFramework_UIEventListenerWrap.Register(L);
 		LuaFramework_EventTriggerWrap.Register(L);
+		LuaFramework_AnimEventListenerWrap.Register(L);
 		L.BeginModule("EventTrigger");
 		L.RegFunction("PointerDelegate", LuaFramework_EventTrigger_PointerDelegate);
 		L.RegFunction("BaseDelegate", LuaFramework_EventTrigger_BaseDelegate);
 		L.RegFunction("AxisDelegate", LuaFramework_EventTrigger_AxisDelegate);
+		L.EndModule();
+		L.BeginModule("AnimEventListener");
+		L.RegFunction("ObjectDelegate", LuaFramework_AnimEventListener_ObjectDelegate);
 		L.EndModule();
 		L.EndModule();
 		L.BeginModule("SUIFW");
@@ -1261,6 +1265,33 @@ public static class LuaBinder
 			{
 				LuaTable self = ToLua.CheckLuaTable(L, 2);
 				Delegate arg1 = DelegateFactory.CreateDelegate(typeof(LuaFramework.EventTrigger.AxisDelegate), func, self);
+				ToLua.Push(L, arg1);
+			}
+			return 1;
+		}
+		catch(Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int LuaFramework_AnimEventListener_ObjectDelegate(IntPtr L)
+	{
+		try
+		{
+			int count = LuaDLL.lua_gettop(L);
+			LuaFunction func = ToLua.CheckLuaFunction(L, 1);
+
+			if (count == 1)
+			{
+				Delegate arg1 = DelegateFactory.CreateDelegate(typeof(LuaFramework.AnimEventListener.ObjectDelegate), func);
+				ToLua.Push(L, arg1);
+			}
+			else
+			{
+				LuaTable self = ToLua.CheckLuaTable(L, 2);
+				Delegate arg1 = DelegateFactory.CreateDelegate(typeof(LuaFramework.AnimEventListener.ObjectDelegate), func, self);
 				ToLua.Push(L, arg1);
 			}
 			return 1;

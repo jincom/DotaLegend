@@ -25,31 +25,36 @@ function M:ctor(go)
   
   self.description = Util.Child(self.skill_popup, "skill_list/viewport/content/skill1/description")
   self.content = Util.Child(self.skill_popup, "skill_list/viewport/content")
-  local skill_list = Util.Childs(self.content):ToTable()
 
-  self.skill_list = {}
-  for i, v in ipairs(skill_list) do
-    local item = {}
-    item.listener = ET.Get(v)
-    item.listener.onDown = item.listener.onDown + self.onSkillItemDown
-    item.listener.onUp = item.listener.onUp + self.onSkillItemUp
-    item.img_icon = Util.Child(v, "img_icon"):GetComponent(typeof(Image))
-    item.txt_name = Util.Child(v, "txt_name"):GetComponent(typeof(Text))
-    self.skill_list[i] = item
-  end
+
+
+
 
   Util.SetMaskableInChild(self.description, false)
   self.UIEL = go:AddComponent(typeof(UIEL))
   self.UIEL.self = self
 
   self.hero_info = {}
-
+  self.skill_list = {}
 
 end
 
 function M:Awake()
   self:BrocastEvent(Protocal.REQ_HERO_INDEX, {name = Protocal.REQ_HERO_INDEX})
   self.skill_spritesname = self.GetSkillSpriteNames()
+
+  local skill_list = Util.Childs(self.content):ToTable()
+  for i, v in ipairs(skill_list) do
+    local item = {}
+    item.gameObject = v
+    --item.listener = ET.Get(Util.Child(v, "trigger"))
+    item.listener = Util.Child(v, "trigger"):AddComponent(typeof(ET))
+    item.listener.onDown = item.listener.onDown + self.onSkillItemDown
+    item.listener.onUp = item.listener.onUp + self.onSkillItemUp
+    item.img_icon = Util.Child(v, "img_icon"):GetComponent(typeof(Image))
+    item.txt_name = Util.Child(v, "txt_name"):GetComponent(typeof(Text))
+    self.skill_list[i] = item
+  end
 
   resMgr:LoadSprite('skill', self.skill_spritesname, self.onFinishLoadSprite)
 end
@@ -101,22 +106,37 @@ function M:FunctionDefine()
     --end
     for i = 0, objs.Length - 1 do
       self.skill_sprites[sn[i + 1]] = objs[i]
-      print('sprite objs:', objs[i]:GetType():ToString())
+      --print('sprite objs:', objs[i]:GetType():ToString())
     end
     self:SetSkillPopup(self.i_select_hero_index)
   end
   -----------onShillItemDown---------------------------
   self.onSkillItemDown = function(go, data)
+    --print('onSkillItemDown')
+    if not isuserdata(go) then return end
+    Util.SetParent(self.description, go)
+    local position = Util.GetAnchorsPos(self.description)
+    position.y = 0
+    Util.SetAnchorsPos(self.description, position)
+    self.description:SetActive(true)
+    local text1 = Util.Child(self.description, "text1"):GetComponent(typeof(Text))
+    local strs = string.split(Util.GetParent(go).name, '_')
+    print('parent name', Util.GetParent(go).name)
+    local skill_i = tonumber(strs[2])
+    print('skill_i', skill_i)
+    local des_str = self.hero_info[self.i_select_hero_index].skills[skill_i].SKILL_DESCRIPTION
   end
   ------------onSkillItemUp--------------------------------
   self.onSkillItemUp = function(go, data)
+    --print('onSkillItemUp')
+    self.description:SetActive(false)
   end
 
 end
 
 function M:Display()
+  self:BrocastEvent(Protocal.REQ_HERO_INDEX, {name = Protocal.REQ_HERO_INDEX})
   self.gameObject:SetActive(true)
-  print('hero_detail_panel display')
 end
 
 --消息接收函数
@@ -154,7 +174,8 @@ function M:SetSkillPopup(index)
     --设置技能图标
     local img_icon = self.skill_list[i].img_icon
     if isuserdata(img_icon) then
-      img_icon.sprite = self.skill_sprites[v.SPRITE_NAME]
+      img_icon.sprite = self.skill_sprites[v.SKILL_SPRITE]
+      print('icon', v.SKILL_SPRITE)
     end
     --设置技能名称
     local txt_name = self.skill_list[i].txt_name

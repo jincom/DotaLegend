@@ -73,8 +73,10 @@ function Game.OnInitOK()
     
     logWarn('LuaFramework InitOK--->>>')
 
-
-    
+    local goo = UnityEngine.GameObject.Find("285497982")
+    local listener = LuaFramework.AnimEventListener.Get(goo)
+    listener:AddEvent("ImageRotate", 0.99, function() print('0.99 Event') end)
+    listener:AddEvent("ImageRotate", 0.999, function() print('0.999 Event') end)
 end
 
 

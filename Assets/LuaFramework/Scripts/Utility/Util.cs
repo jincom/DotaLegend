@@ -146,6 +146,13 @@ namespace LuaFramework
             child.SetParent(parent);
         }
 
+        public static Transform GetParent(GameObject target)
+        {
+            if (target == null) return null;
+
+            return target.transform.parent;
+        }
+
         /// <summary>
         /// 查找子对象
         /// </summary>

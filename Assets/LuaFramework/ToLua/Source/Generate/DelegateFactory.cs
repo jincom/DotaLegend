@@ -63,6 +63,7 @@ public static class DelegateFactory
 		dict.Add(typeof(LuaFramework.EventTrigger.PointerDelegate), LuaFramework_EventTrigger_PointerDelegate);
 		dict.Add(typeof(LuaFramework.EventTrigger.BaseDelegate), LuaFramework_EventTrigger_BaseDelegate);
 		dict.Add(typeof(LuaFramework.EventTrigger.AxisDelegate), LuaFramework_EventTrigger_AxisDelegate);
+		dict.Add(typeof(LuaFramework.AnimEventListener.ObjectDelegate), LuaFramework_AnimEventListener_ObjectDelegate);
 	}
 
     [NoToLuaAttribute]
@@ -2369,6 +2370,53 @@ public static class DelegateFactory
 		{
 			LuaFramework_EventTrigger_AxisDelegate_Event target = new LuaFramework_EventTrigger_AxisDelegate_Event(func, self);
 			LuaFramework.EventTrigger.AxisDelegate d = target.CallWithSelf;
+			target.method = d.Method;
+			return d;
+		}
+	}
+
+	class LuaFramework_AnimEventListener_ObjectDelegate_Event : LuaDelegate
+	{
+		public LuaFramework_AnimEventListener_ObjectDelegate_Event(LuaFunction func) : base(func) { }
+		public LuaFramework_AnimEventListener_ObjectDelegate_Event(LuaFunction func, LuaTable self) : base(func, self) { }
+
+		public void Call(object param0)
+		{
+			func.BeginPCall();
+			func.Push(param0);
+			func.PCall();
+			func.EndPCall();
+		}
+
+		public void CallWithSelf(object param0)
+		{
+			func.BeginPCall();
+			func.Push(self);
+			func.Push(param0);
+			func.PCall();
+			func.EndPCall();
+		}
+	}
+
+	public static Delegate LuaFramework_AnimEventListener_ObjectDelegate(LuaFunction func, LuaTable self, bool flag)
+	{
+		if (func == null)
+		{
+			LuaFramework.AnimEventListener.ObjectDelegate fn = delegate(object param0) { };
+			return fn;
+		}
+
+		if(!flag)
+		{
+			LuaFramework_AnimEventListener_ObjectDelegate_Event target = new LuaFramework_AnimEventListener_ObjectDelegate_Event(func);
+			LuaFramework.AnimEventListener.ObjectDelegate d = target.Call;
+			target.method = d.Method;
+			return d;
+		}
+		else
+		{
+			LuaFramework_AnimEventListener_ObjectDelegate_Event target = new LuaFramework_AnimEventListener_ObjectDelegate_Event(func, self);
+			LuaFramework.AnimEventListener.ObjectDelegate d = target.CallWithSelf;
 			target.method = d.Method;
 			return d;
 		}

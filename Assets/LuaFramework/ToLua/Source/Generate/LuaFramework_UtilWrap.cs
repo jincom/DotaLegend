@@ -14,6 +14,7 @@ public class LuaFramework_UtilWrap
 		L.RegFunction("Uid", Uid);
 		L.RegFunction("GetTime", GetTime);
 		L.RegFunction("SetParent", SetParent);
+		L.RegFunction("GetParent", GetParent);
 		L.RegFunction("Child", Child);
 		L.RegFunction("Childs", Childs);
 		L.RegFunction("Peer", Peer);
@@ -226,6 +227,23 @@ public class LuaFramework_UtilWrap
 			{
 				return LuaDLL.luaL_throw(L, "invalid arguments to method: LuaFramework.Util.SetParent");
 			}
+		}
+		catch(Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int GetParent(IntPtr L)
+	{
+		try
+		{
+			ToLua.CheckArgsCount(L, 1);
+			UnityEngine.GameObject arg0 = (UnityEngine.GameObject)ToLua.CheckUnityObject(L, 1, typeof(UnityEngine.GameObject));
+			UnityEngine.Transform o = LuaFramework.Util.GetParent(arg0);
+			ToLua.Push(L, o);
+			return 1;
 		}
 		catch(Exception e)
 		{

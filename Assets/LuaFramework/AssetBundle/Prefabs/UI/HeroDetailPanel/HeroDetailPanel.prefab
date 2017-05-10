@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 222728207674271620}
   - component: {fileID: 114938448474815522}
   m_Layer: 5
-  m_Name: skill2
+  m_Name: skill_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -944,7 +944,7 @@ GameObject:
   - component: {fileID: 222467463649854962}
   - component: {fileID: 114393004179185480}
   m_Layer: 5
-  m_Name: skill3
+  m_Name: skill_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1217,7 +1217,7 @@ GameObject:
   - component: {fileID: 222654156967233074}
   - component: {fileID: 114043593942463412}
   m_Layer: 5
-  m_Name: skill4
+  m_Name: skill_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2620,7 +2620,7 @@ GameObject:
   - component: {fileID: 222134405926216910}
   - component: {fileID: 114735575869809452}
   m_Layer: 5
-  m_Name: skill5
+  m_Name: skill_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2899,7 +2899,7 @@ GameObject:
   - component: {fileID: 222232836596183960}
   - component: {fileID: 114368369630571872}
   m_Layer: 5
-  m_Name: skill1
+  m_Name: skill_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

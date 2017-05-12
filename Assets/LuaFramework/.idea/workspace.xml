@@ -2,39 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d61e7216-60c7-4ccc-803d-dcf08c60824f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/card_bg/card_bg_blue.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/card_bg/card_bg_blue_alpha_mask.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/card_bg/card_bg_green.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/card_bg/card_bg_green_alpha_mask.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/card_bg/card_bg_orange.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/card_bg/card_bg_orange_alpha_mask.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/card_bg/card_bg_purple.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/card_bg/card_bg_purple_alpha_mask.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/card_bg/card_bg_white.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/card_bg/card_bg_white_alpha_mask.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/main_bg_grass_left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/main_bg_grass_right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/main_bg_mountain_left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/Texture/main_bg_mountain_right.jpg" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AssetBundle/Prefabs/UI/panel/panel.prefab" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/UnityEngine_EventSystems_AbstractEventDataWrap.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/UnityEngine_EventSystems_AxisEventDataWrap.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/UnityEngine_EventSystems_BaseEventDataWrap.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/UnityEngine_EventSystems_PointerEventDataWrap.cs" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Image.controller" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ImageRotate.anim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Scripts/Common/AnimEventListener.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ToLua/Source/Generate/LuaFramework_AnimEventListenerWrap.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../TestImage.anim" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../.vs/DotaLegend/v14/.suo" afterPath="$PROJECT_DIR$/../../.vs/DotaLegend/v14/.suo" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/StreamingAssets" afterPath="$PROJECT_DIR$/../StreamingAssets/StreamingAssets" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/herodetailpanel" afterPath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/herodetailpanel" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/mainpanel" afterPath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/mainpanel" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../.gitignore" afterPath="$PROJECT_DIR$/../../.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AssetBundle/Prefabs/UI/HeroDetailPanel/HeroDetailPanel.prefab" afterPath="$PROJECT_DIR$/AssetBundle/Prefabs/UI/HeroDetailPanel/HeroDetailPanel.prefab" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AssetBundle/Prefabs/UI/MainPanel/MainPanel.prefab" afterPath="$PROJECT_DIR$/AssetBundle/Prefabs/UI/MainPanel/MainPanel.prefab" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Editor/CustomSettings.cs" afterPath="$PROJECT_DIR$/Editor/CustomSettings.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/Logic/Game.lua" afterPath="$PROJECT_DIR$/Lua/Logic/Game.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/Main.lua" afterPath="$PROJECT_DIR$/Lua/Main.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/Test/TestBase.lua" afterPath="$PROJECT_DIR$/Lua/Test/TestBase.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/View/BasePanel.lua" afterPath="$PROJECT_DIR$/Lua/View/BasePanel.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua" afterPath="$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/View/MainPanel.lua" afterPath="$PROJECT_DIR$/Lua/View/MainPanel.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/View/MessagePanel.lua" afterPath="$PROJECT_DIR$/Lua/View/MessagePanel.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/View/TopBarPanel.lua" afterPath="$PROJECT_DIR$/Lua/View/TopBarPanel.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scenes/Penghu.unity" afterPath="$PROJECT_DIR$/Scenes/Penghu.unity" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scenes/Test.unity" afterPath="$PROJECT_DIR$/Scenes/Test.unity" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/Utility/Util.cs" afterPath="$PROJECT_DIR$/Scripts/Utility/Util.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/SDK/WXData.cs" afterPath="$PROJECT_DIR$/Scripts/SDK/WXData.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/TestLayout.cs" afterPath="$PROJECT_DIR$/Test/TestLayout.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/Texture/TestAnimEvent.cs" afterPath="$PROJECT_DIR$/Test/Texture/TestAnimEvent.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ToLua/Lua/System/coroutine.lua" afterPath="$PROJECT_DIR$/ToLua/Lua/System/coroutine.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ToLua/Source/Generate/DelegateFactory.cs" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/DelegateFactory.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ToLua/Source/Generate/LuaBinder.cs" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/LuaBinder.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ToLua/Source/Generate/LuaFramework_UtilWrap.cs" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/LuaFramework_UtilWrap.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/StreamingAssets.manifest" afterPath="$PROJECT_DIR$/../StreamingAssets/StreamingAssets.manifest" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/files.txt" afterPath="$PROJECT_DIR$/../StreamingAssets/files.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/Logic/Game.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/Logic/Game.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/System/coroutine.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/System/coroutine.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/Test/TestBase.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/Test/TestBase.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/View/BasePanel.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/View/BasePanel.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/View/HeroDetailPanel.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/View/HeroDetailPanel.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/View/MainPanel.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/View/MainPanel.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/herodetailpanel.manifest" afterPath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/herodetailpanel.manifest" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/mainpanel.manifest" afterPath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/mainpanel.manifest" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../DotaLegend.Editor.Plugins.csproj" afterPath="$PROJECT_DIR$/../../DotaLegend.Editor.Plugins.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../DotaLegend.Editor.csproj" afterPath="$PROJECT_DIR$/../../DotaLegend.Editor.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../DotaLegend.Plugins.csproj" afterPath="$PROJECT_DIR$/../../DotaLegend.Plugins.csproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../DotaLegend.csproj" afterPath="$PROJECT_DIR$/../../DotaLegend.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ProjectSettings/GraphicsSettings.asset" afterPath="$PROJECT_DIR$/../../ProjectSettings/GraphicsSettings.asset" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ProjectSettings/ProjectSettings.asset" afterPath="$PROJECT_DIR$/../../ProjectSettings/ProjectSettings.asset" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,7 +70,7 @@
       <file leaf-file-name="HeroPanel.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lua/View/HeroPanel.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4575">
+            <state relative-caret-position="4107">
               <caret line="183" column="76" lean-forward="false" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="76" />
               <folding />
             </state>
@@ -62,8 +80,8 @@
       <file leaf-file-name="BasePanel.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lua/View/BasePanel.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1550">
-              <caret line="62" column="6" lean-forward="false" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+            <state relative-caret-position="2407">
+              <caret line="101" column="6" lean-forward="false" selection-start-line="101" selection-start-column="6" selection-end-line="101" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -79,51 +97,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="TopbarPanel.lua" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lua/View/TopbarPanel.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="HeroDetailPanel.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="57" column="8" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+            <state relative-caret-position="2525">
+              <caret line="125" column="0" lean-forward="true" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.lua" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Game.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lua/Logic/Game.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="78" column="13" lean-forward="false" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HERO_SKILLS.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lua/Data/HERO_SKILLS.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1925">
-              <caret line="77" column="6" lean-forward="false" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HERO_INFO.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lua/Data/HERO_INFO.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="protocal.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lua/Common/protocal.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="275">
+              <caret line="45" column="30" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -132,8 +130,18 @@
       <file leaf-file-name="MainPanel.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lua/View/MainPanel.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="825">
+              <caret line="63" column="58" lean-forward="false" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lua/Main.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -141,6 +149,16 @@
       </file>
       <file leaf-file-name="MessagePanel.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lua/View/MessagePanel.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="27" column="2" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RightbarPanel.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lua/View/RightbarPanel.lua">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -156,6 +174,9 @@
       <find>onmessage</find>
       <find>print</find>
     </findStrings>
+    <replaceStrings>
+      <replace>height</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -172,21 +193,26 @@
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/Lua/View/TestMoudle.lua" />
         <option value="$PROJECT_DIR$/Lua/Common/protocal.lua" />
-        <option value="$PROJECT_DIR$/Lua/View/BasePanel.lua" />
         <option value="$PROJECT_DIR$/Lua/Common/functions.lua" />
-        <option value="$PROJECT_DIR$/Lua/View/MainPanel.lua" />
         <option value="$PROJECT_DIR$/Lua/Data/HERO_SKILLS.lua" />
         <option value="$PROJECT_DIR$/Lua/View/HeroPanel.lua" />
-        <option value="$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua" />
+        <option value="$PROJECT_DIR$/ToLua/Lua/System/coroutine.lua" />
+        <option value="$PROJECT_DIR$/Lua/Test/TestBase.lua" />
+        <option value="$PROJECT_DIR$/Lua/Main.lua" />
         <option value="$PROJECT_DIR$/Lua/Logic/Game.lua" />
+        <option value="$PROJECT_DIR$/Lua/View/BasePanel.lua" />
+        <option value="$PROJECT_DIR$/Lua/View/MessagePanel.lua" />
+        <option value="$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua" />
+        <option value="$PROJECT_DIR$/Lua/View/MainPanel.lua" />
+        <option value="$PROJECT_DIR$/Lua/View/TopbarPanel.lua" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="2578" />
-    <option name="height" value="1408" />
+    <option name="x" value="-2409" />
+    <option name="y" value="196" />
+    <option name="width" value="2418" />
+    <option name="height" value="1318" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -204,11 +230,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LuaFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LuaFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ToLua" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="LuaFramework" />
@@ -251,44 +288,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LuaFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LuaFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lua" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Logic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LuaFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LuaFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lua" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -543,8 +547,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="2578" height="1408" extended-state="7" />
-    <editor active="true" />
+    <frame x="-2409" y="196" width="2418" height="1318" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -552,7 +555,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23210071" sideWeight="0.5015625" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24978831" sideWeight="0.5015625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -560,8 +563,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23760818" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12851563" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19375" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13708334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20666666" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -596,62 +599,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Lua/View/MessagePanel.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2950">
-          <caret line="118" column="18" lean-forward="true" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/HeroPanel.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4575">
-          <caret line="183" column="76" lean-forward="false" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/BasePanel.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1550">
-          <caret line="62" column="6" lean-forward="false" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/TestMoudle.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/Common/functions.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="68" column="22" lean-forward="false" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/Data/HERO_SKILLS.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1925">
-          <caret line="77" column="6" lean-forward="false" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lua/Data/HERO_INFO.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -779,13 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/Main.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/Network/Converter.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-810">
@@ -892,22 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/Common/functions.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="68" column="22" lean-forward="false" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/TestMoudle.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lua/Common/protocal.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -924,38 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/MainPanel.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/MessagePanel.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/BasePanel.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1550">
-          <caret line="62" column="6" lean-forward="false" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/HeroPanel.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4575">
-          <caret line="183" column="76" lean-forward="false" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lua/Data/HERO_SKILLS.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1925">
@@ -964,18 +856,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua">
+    <entry file="file://$PROJECT_DIR$/Lua/Test/TestBase.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="57" column="8" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+        <state relative-caret-position="475">
+          <caret line="19" column="3" lean-forward="false" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/Common/functions.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToLua/Lua/System/coroutine.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="108" column="24" lean-forward="false" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToLua/Lua/UnityEngine/Vector2.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1875">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToLua/Lua/tolua.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToLua/Lua/event.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-422">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/Main.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lua/Logic/Game.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="78" column="13" lean-forward="false" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+        <state relative-caret-position="275">
+          <caret line="45" column="30" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/View/BasePanel.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2407">
+          <caret line="101" column="6" lean-forward="false" selection-start-line="101" selection-start-column="6" selection-end-line="101" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2525">
+          <caret line="125" column="0" lean-forward="true" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/View/HeroPanel.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4107">
+          <caret line="183" column="76" lean-forward="false" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/View/MainPanel.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="63" column="58" lean-forward="false" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/View/MessagePanel.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="27" column="2" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/View/RightbarPanel.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/View/TestMoudle.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/View/TopbarPanel.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding />
         </state>
       </provider>

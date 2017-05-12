@@ -28,7 +28,7 @@ namespace JSDK
             StorageMode = StorageMode.JSON;
             StorageSite = StorageSite.Client;
             Url = AppConst.ConfigurationUrl + "/WXData.json";
-            Debug.Log(url);
+            //Debug.Log(url);
         }
 
         public void InitData()

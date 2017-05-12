@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 2225344019
+CRC: 1763544306
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -20,14 +20,17 @@ AssetBundleManifest:
       Name: prefabs/ui/packagepanel
       Dependencies: {}
     Info_5:
-      Name: prefabs/ui/rightbarpanel
+      Name: prefabs/ui/panel
       Dependencies: {}
     Info_6:
-      Name: prefabs/ui/topbarpanel
+      Name: prefabs/ui/rightbarpanel
       Dependencies: {}
     Info_7:
-      Name: textrues/altas/headimg
+      Name: prefabs/ui/topbarpanel
       Dependencies: {}
     Info_8:
+      Name: textrues/altas/headimg
+      Dependencies: {}
+    Info_9:
       Name: textrues/altas/skill
       Dependencies: {}

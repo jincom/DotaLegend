@@ -6,13 +6,13 @@ PlayerSettings:
   serializedVersion: 10
   productGUID: 7a300422526be2141b3bc526ddfb121b
   AndroidProfiler: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 3
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: "\u95F2\u4E50\u78B0\u80E1"
-  defaultCursor: {fileID: 0}
+  companyName: jincom
+  productName: "\u5200\u5854\u4F20\u5947"
+  defaultCursor: {fileID: 2800000, guid: fa8bdec1d1b2f93479c4602bd2cca86b, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13333334, g: 0.17254902, b: 0.21176471, a: 1}
   m_ShowUnitySplashScreen: 1
@@ -213,7 +213,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 0}
+      m_Icon: {fileID: 2800000, guid: e0cbfc4992a616f4d80ca99bd9ac48b4, type: 3}
       m_Width: 128
       m_Height: 128
   m_BuildTargetBatching:

@@ -70,10 +70,7 @@ end
 function M:FunctionDefine()
   ----------OnMessage------------------------------
   self.OnMessage = function(message)
-    --print('hero detail panel on message')
-    --print("data type:", type(message.data))
     if message == nil then return end
-    --print(message.name, message.data)
     local name = message.name
     local data = message.data
 
@@ -87,22 +84,13 @@ function M:FunctionDefine()
   -----------onFinishLoadSprite-------------------------
   self.onFinishLoadSprite = function(objs)
     logWarn('onFinishLoadSprite')
-    --print('sprite objs len:', objs.Length)
     local t = objs:ToTable()
-    --print('sprites len:', #t)
     if(self.skill_sprites == nil) then
       self.skill_sprites = {}
     end
     local sn = self.skill_spritesname
-    --for i, v in ipairs(self.skill_spritesname) do
-    --  print('sprites name', v)
-    --end
-    --for i, v in ipairs(t) do
-    --  self.skill_sprites[sn[i]] = v
-    --end
     for i = 0, objs.Length - 1 do
       self.skill_sprites[sn[i + 1]] = objs[i]
-      --print('sprite objs:', objs[i]:GetType():ToString())
     end
     self:SetSkillPopup(self.i_select_hero_index)
   end
@@ -136,20 +124,6 @@ function M:Display()
   self.gameObject:SetActive(true)
 end
 
---消息接收函数
---function M:OnMessage(message)
---  print('hero detail panel on message')
---  if message == nil then return end
---  print(message.name, message.data)
---  local name = message.name
---  local data = message.data
---
---  if name == Protocal.RESP_HERO_INDEX then
---    print('接收到英雄数据响应', message.data)
---    self.i_select_hero_index = data
---    self:SetSkillPopup(data)
---  end
---end
 
 function M:SetSkillPopup(index)
   --print('index type', type(index))

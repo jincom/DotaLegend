@@ -171,7 +171,7 @@ public static class CustomSettings
         _GT(typeof(RenderTexture)),
         _GT(typeof(Resources)), 
         
-        //for UGUI
+        //for UGUI and EventSystems
         _GT(typeof(UnityEngine.Canvas)),
         _GT(typeof(UnityEngine.CanvasGroup)),
         _GT(typeof(UnityEngine.RenderMode)),
@@ -192,6 +192,9 @@ public static class CustomSettings
         _GT(typeof(UnityEngine.RectTransform.Edge)),
         _GT(typeof(UnityEngine.UI.CanvasScaler.ScaleMode)),
         _GT(typeof(UnityEngine.UI.CanvasScaler.ScreenMatchMode)),
+        _GT(typeof(UnityEngine.EventSystems.PointerEventData)),
+        _GT(typeof(UnityEngine.EventSystems.AxisEventData)),
+        _GT(typeof(UnityEngine.EventSystems.BaseEventData)),
         
           
         //for LuaFramework
@@ -218,7 +221,7 @@ public static class CustomSettings
         //for test
         _GT(typeof(LuaFramework.UIEventListener)),
         _GT(typeof(LuaFramework.EventTrigger)),
-        _GT(typeof(LuaFramework.AnimEventListener)),
+        //_GT(typeof(LuaFramework.AnimEventListener)),
 
      };
         

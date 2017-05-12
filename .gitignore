@@ -46,4 +46,11 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+#building
+.apk
+
+# Floder
+/Assets/StreamingAssets/*
+
+
 

@@ -117,6 +117,8 @@ function coroutine.www(www, co)
  	return yield()
 end
 
+
+
 function coroutine.stop(co)
  	local timer = comap[co]
 

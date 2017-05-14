@@ -1,89 +1,205 @@
 ﻿using UnityEngine;
 using LuaInterface;
-using System.Collections;
-using System.Collections.Generic;
 using System;
-using UnityEngine.UI;
 
 namespace LuaFramework
 {
-    public class LuaBehaviour : Base
+    public class LuaBehaviour : MonoBehaviour
     {
-        private string data = null;
-        private Dictionary<string, LuaFunction> buttons = new Dictionary<string, LuaFunction>();
+        [SerializeField]
+        private string m_luaModuleName;
 
-        protected void Awake()
+        private LuaTable m_peer;
+        private LuaTable m_luaComponent;
+        private LuaFunction m_lua_update;
+        private LuaFunction m_lua_onenable;
+        private LuaFunction m_lua_ondisable;
+
+        private static LuaFunction SET_PEER;
+        private static LuaTable UPDATE_BEAT;
+        private static LuaFunction UPDATEBEAT_ADD;
+        private static LuaFunction UPDATEBEAT_REMOVE;
+        private static LuaTable TOLUA;
+        private volatile static LuaTable LUA_COMPONENT;
+        private static LuaManager LUA_MANAGER;
+        private static readonly object lock_object = new object();
+
+        private static LuaState M_MAIN_STATE;
+
+        public static LuaState MAIN_STATE
         {
-            RectTransform t;
-            Util.CallMethod(name, "Awake", gameObject);
+            get { return M_MAIN_STATE; }
         }
 
-        protected void Start()
+        public LuaTable peer
         {
-            Util.CallMethod(name, "Start");
+            get { return m_peer; }
         }
 
-        protected void OnClick()
+        public LuaTable LuaComponent
         {
-            Util.CallMethod(name, "OnClick");
+            get { return m_luaComponent; }
         }
 
-        protected void OnClickEvent(GameObject go)
+        static LuaBehaviour()
         {
-            Util.CallMethod(name, "OnClick", go);
+            //if (M_MAIN_STATE == null)
+            //{
+            //    M_MAIN_STATE = LuaClient.GetMainState();
+            //}
+            LUA_MANAGER = AppFacade.Instance.GetManager<LuaManager>(ManagerName.Lua);
+
+            M_MAIN_STATE = LUA_MANAGER.MainState;
+
+            M_MAIN_STATE.LuaGetGlobal("tolua");
+
+            TOLUA = M_MAIN_STATE.CheckLuaTable(-1);
+            M_MAIN_STATE.LuaPop(1);
+
+            SET_PEER = TOLUA.GetLuaFunction("setpeer");
+
+            M_MAIN_STATE.LuaGetGlobal("UpdateBeat");
+            UPDATE_BEAT = M_MAIN_STATE.CheckLuaTable(-1);
+            M_MAIN_STATE.LuaPop(1);
+            UPDATEBEAT_ADD = UPDATE_BEAT.GetLuaFunction("Add");
+            UPDATEBEAT_REMOVE = UPDATE_BEAT.GetLuaFunction("Remove");
+
+            LUA_COMPONENT = null;
         }
 
-        /// <summary>
-        /// 添加单击事件
-        /// </summary>
-        public void AddClick(GameObject go, LuaFunction luafunc)
+
+        public static LuaBehaviour Add(GameObject go, LuaTable luaComponent)
         {
-            if (go == null || luafunc == null) return;
-            buttons.Add(go.name, luafunc);
-            go.GetComponent<Button>().onClick.AddListener(
-                delegate() 
+            if (luaComponent == null)
+            {
+                Debug.LogError("can not add a nil luaComponent");
+                return null;
+            }
+            lock (lock_object)
+            {
+                LUA_COMPONENT = luaComponent;
+                LuaBehaviour luaBehaviour = go.AddComponent<LuaBehaviour>();
+                LUA_COMPONENT = null;
+                return luaBehaviour;
+            }
+        }
+
+        public static LuaBehaviour Get(GameObject go, LuaTable luaComponent)
+        {
+            LuaBehaviour[] components = go.GetComponents<LuaBehaviour>();
+            for (int i = 0; i < components.Length; i++)
+            {
+                if (components[i].LuaComponent == luaComponent)
                 {
-                    luafunc.Call(go);
+                    return components[i];
                 }
-            );
+            }
+            return null;
         }
 
-        /// <summary>
-        /// 删除单击事件
-        /// </summary>
-        /// <param name="go"></param>
-        public void RemoveClick(GameObject go)
+        protected virtual void Awake()
         {
-            if (go == null) return;
-            LuaFunction luafunc = null;
-            if (buttons.TryGetValue(go.name, out luafunc)) {
-                luafunc.Dispose();
-                luafunc = null;
-                buttons.Remove(go.name);
+            m_luaComponent = LUA_COMPONENT;
+            LuaFunction newfunc = m_luaComponent.GetLuaFunction("new");
+            if (newfunc == null)
+            {
+                Debug.LogError("luaComponent not found new function");
+                Destroy(this);
+            }
+            newfunc.BeginPCall();
+            newfunc.Push(gameObject);
+            newfunc.PCall();
+            m_peer = newfunc.CheckLuaTable();
+            newfunc.EndPCall();
+
+
+            SET_PEER.BeginPCall();
+            SET_PEER.Push(this);
+            SET_PEER.Push(m_peer);
+            SET_PEER.PCall();
+            SET_PEER.EndPCall();
+
+            m_lua_update = m_peer.GetLuaFunction("Update");
+            m_lua_onenable = m_peer.GetLuaFunction("OnEnable");
+            m_lua_ondisable = m_peer.GetLuaFunction("OnDisable");
+
+            CallLuaMethod("Awake", gameObject);
+
+
+        }
+
+        // Use this for initialization
+        protected virtual void Start()
+        {
+            CallLuaMethod("Start");
+        }
+
+        protected virtual void OnEnable()
+        {
+            CallLuaMethod(m_lua_onenable, m_peer);
+
+            if (m_lua_update != null)
+            {
+                UPDATEBEAT_ADD.BeginPCall();
+                UPDATEBEAT_ADD.Push(UPDATE_BEAT);
+                UPDATEBEAT_ADD.Push(m_lua_update);
+                UPDATEBEAT_ADD.Push(m_peer);
+                UPDATEBEAT_ADD.PCall();
+                UPDATEBEAT_ADD.EndPCall();
+            }
+
+        }
+
+        protected virtual void OnDisable()
+        {
+            CallLuaMethod(m_lua_ondisable, m_peer);
+
+            if (m_lua_update != null)
+            {
+                UPDATEBEAT_REMOVE.BeginPCall();
+                UPDATEBEAT_REMOVE.Push(UPDATE_BEAT);
+                UPDATEBEAT_REMOVE.Push(m_lua_update);
+                UPDATEBEAT_REMOVE.Push(m_peer);
+                UPDATEBEAT_REMOVE.PCall();
+                UPDATEBEAT_REMOVE.EndPCall();
             }
         }
 
-        /// <summary>
-        /// 清除单击事件
-        /// </summary>
-        public void ClearClick() {
-            foreach (var de in buttons) {
-                if (de.Value != null) {
-                    de.Value.Dispose();
-                }
-            }
-            buttons.Clear();
+        protected virtual void OnDestroy()
+        {
+            CallLuaMethod("OnDestroy");
         }
 
-        //-----------------------------------------------------------------
-        protected void OnDestroy() {
-            ClearClick();
-#if ASYNC_MODE
-            string abName = name.ToLower().Replace("panel", "");
-            ResManager.UnloadAssetBundle(abName + AppConst.ExtName);
-#endif
-            Util.ClearMemory();
-            Debug.Log("~" + name + " was destroy!");
+
+        protected void CallLuaMethod(LuaFunction lua_func, params object[] objs)
+        {
+            if (lua_func == null)
+                return;
+
+            lua_func.BeginPCall();
+            lua_func.Push(m_peer);
+            foreach (var obj in objs)
+                lua_func.Push(obj);
+            lua_func.PCall();
+            lua_func.EndPCall();
+
+        }
+
+        protected void CallLuaMethod(string methodName, params object[] objs)
+        {
+            LuaFunction lua_func = m_peer.GetLuaFunction(methodName);
+            if (lua_func == null)
+                return;
+
+            lua_func.BeginPCall();
+            lua_func.Push(m_peer);
+            foreach (var obj in objs)
+                lua_func.Push(obj);
+            lua_func.PCall();
+            lua_func.EndPCall();
+
+            lua_func.Dispose();
+            lua_func = null;
         }
     }
 }

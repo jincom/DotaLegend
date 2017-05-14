@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using LuaFramework;
 
 public class TestWWWDownTexture : MonoBehaviour {
     public Image image;
 	// Use this for initialization
 	void Start () {
-        StartCoroutine(download());
+        //StartCoroutine(download());
+        //gameObject.AddComponent<LuaBehaviour>().init();
+        Debug.Log("Test Test Test: " + Time.frameCount);
 	}
 	
 	// Update is called once per frame

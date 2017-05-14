@@ -2,6 +2,9 @@
 --package.path = "D:\\Unity Project\\PenghuClient\\Assets\\LuaFramework\\Lua\\?.lua;"..package.path
 --print(package.path)
 --require("debugger")("127.0.0.1",8080, "luaidekey")
+local UE = UnityEngine
+local GO = UE.GameObject
+local LuaBehaviour = LuaFramework.LuaBehaviour
 require "3rd/pbc/protobuf"
 
 local lpeg = require "lpeg"
@@ -12,7 +15,6 @@ local util = require "3rd/cjson/util"
 local sproto = require "3rd/sproto/sproto"
 local core = require "sproto.core"
 local print_r = require "3rd/sproto/print_r"
---local uiManager = require 'View/UIManager'
 
 require "Logic/LuaClass"
 require "Logic/CtrlManager"
@@ -33,43 +35,28 @@ local transform;
 local gameObject;
 local WWW = UnityEngine.WWW;
 
-function Game.InitViewPanels()
-	for i = 1, #PanelNames do
-		require ("View/"..tostring(PanelNames[i]))
-	end
-end
 
 --初始化完成，发送链接服务器信息--
 function Game.OnInitOK()
-    --AppConst.SocketPort = 8000;
-    --AppConst.SocketAddress = "192.168.1.101";
-    --require("3rd/zerobrane/mobdebug").start("localhost")
-   -- require("debugger")("127.0.0.1",10001, "")
 
     networkMgr:SendConnect();
-    
-    
 
-    --注册LuaView--
-    --this.InitViewPanels();
-
---    this.test_class_func();
+    --this.test_class_func();
     --this.test_pblua_func();
-    this.test_cjson_func();
-    this.test_pbc_func();
-    this.test_lpeg_func();
-    this.test_sproto_func();
-    --this.test_InstanceObj();
-    coroutine.start(this.test_coroutine);
+    --this.test_cjson_func();
+    --this.test_pbc_func();
+    --this.test_lpeg_func();
+    --this.test_sproto_func();
 
---    CtrlManager.Init();
---    local ctrl = CtrlManager.GetCtrl(CtrlNames.Prompt);
---    if ctrl ~= nil and AppConst.ExampleMode == 1 then
---        ctrl:Awake();
---    end
+    --this.test_InstanceObj();
+    --coroutine.start(this.test_coroutine);
+
     uiMgr:ShowUIForms('TopbarPanel')
     uiMgr:ShowUIForms('MainPanel')
     uiMgr:ShowUIForms('RightbarPanel')
+
+    local go = GO("hhh")
+    LuaBehaviour.Add(go, require('TestMoudle'))
     
     logWarn('LuaFramework InitOK--->>>')
     

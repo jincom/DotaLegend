@@ -10,8 +10,8 @@ public static class LuaBinder
 		float t = Time.realtimeSinceStartup;
 		L.BeginModule(null);
 		LuaInterface_DebuggerWrap.Register(L);
-		BaseWrap.Register(L);
 		ManagerWrap.Register(L);
+		BaseWrap.Register(L);
 		ViewWrap.Register(L);
 		L.BeginModule("DG");
 		L.BeginModule("Tweening");

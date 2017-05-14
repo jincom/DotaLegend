@@ -8,6 +8,11 @@ namespace LuaFramework {
         private LuaLoader loader;
         private LuaLooper loop = null;
 
+        public LuaState MainState
+        {
+            get { return lua; }
+        }
+
         // Use this for initialization
         void Awake() {
             loader = new LuaLoader();
@@ -102,11 +107,13 @@ namespace LuaFramework {
             {
                 string rootPath = AppConst.FrameworkRoot;
                 lua.AddSearchPath(rootPath + "/Lua");
+                lua.AddSearchPath(rootPath + "/Lua/?");
                 lua.AddSearchPath(rootPath + "/ToLua/Lua");
             }
             else
             {
                 lua.AddSearchPath(Util.DataPath + "lua");
+                lua.AddSearchPath(Util.DataPath + "lua/?");
                 //lua.AddSearchPath(AppConst.FrameworkRoot + "/ToLua/Lua");
             }
         }

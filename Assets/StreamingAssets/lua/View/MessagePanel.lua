@@ -9,7 +9,7 @@ require "Common/functions"
 local cls = class(require "View/BasePanel")
 
 function cls:ctor(go)
-    logWarn("MessagePanel CTOR")
+    --logWarn("MessagePanel CTOR")
     self.baseUIForm.CurrentUIType.UIForms_ShowMode = UIFormShowMode.ReverseChange
     self.baseUIForm.CurrentUIType.UIForms_Type =  UIFormsType.PopUp
     self.frame = self.transform:FindChild("frame").gameObject
@@ -30,7 +30,7 @@ end
 
 --注册点击监听事件--
 function cls:RegistyEvent()
-    logWarn("MessagePanel RegistyEvent")
+    --logWarn("MessagePanel RegistyEvent")
     --logWarn('MessagePanel.baseUIForm is '..type(self.baseUIForm))
     self.baseUIForm:AddClickListener(self.btn_confirm, self.OnConfirmClick)
     --logWarn('MessagePanel.baseUIForm is '..type(self.baseUIForm))
@@ -38,7 +38,7 @@ end
 
 --点击登陆事件--
 function cls:OnConfirmClick(go)
-    logWarn('MessagePanel.OnConfirmClick ')
+    --logWarn('MessagePanel.OnConfirmClick ')
     --logWarn('MessagePanel.baseUIForm is '..type(self.baseUIForm))  
     
     self.baseUIForm:CloseUIForm()

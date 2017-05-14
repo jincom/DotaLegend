@@ -2,56 +2,325 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d61e7216-60c7-4ccc-803d-dcf08c60824f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AssetBundle/Prefabs/UI/panel/panel.prefab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/UnityEngine_EventSystems_AbstractEventDataWrap.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/UnityEngine_EventSystems_AxisEventDataWrap.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/UnityEngine_EventSystems_BaseEventDataWrap.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/UnityEngine_EventSystems_PointerEventDataWrap.cs" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Image.controller" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ImageRotate.anim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Scripts/Common/AnimEventListener.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ToLua/Source/Generate/LuaFramework_AnimEventListenerWrap.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../TestImage.anim" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lua/Common/LuaBehaviour.lua" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lua/Test/TestMoudle.lua" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Lua/Common/UGUIDefine.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Lua/View/TestMoudle.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/Common/UGUIDefine.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/View/TestMoudle.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/Package_unaligned.apk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/libs/x86/libunity.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/plugins/libammsdk.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/plugins/sdk.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw.ap_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/StreamingAssets" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/StreamingAssets.manifest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/files.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/cjson/example1.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/cjson/example2.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/cjson/example3.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/cjson/example4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/cjson/example5.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/cjson/json2lua.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/cjson/lua2json.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/cjson/test.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/cjson/util.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/Makefile.mingw" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/bitbench.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/bittest.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/doc/api.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/doc/bluequad-print.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/doc/bluequad.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/doc/changes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/doc/contact.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/doc/img/contact.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/doc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/doc/install.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/doc/semantics.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/installpath.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/md5test.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/msvcbuild.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/msvctest.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/luabitop/nsievebits.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/pbc/addressbook.pb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/pbc/addressbook.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/pbc/parser.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/pbc/protobuf.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/pbc/test.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/pbc/test2.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/pbc/testparser.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/pblua/WXToken_pb.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/pblua/login.proto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/pblua/login_pb.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/pblua/person_pb.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/sproto/print_r.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/sproto/sproto.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/sproto/sprotoparser.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/sproto/test.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/sproto/testall.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/sproto/testrpc.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/3rd/zerobrane/mobdebug.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Common/UGUIDefine.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Common/UnityApi.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Common/class.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Common/define.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Common/functions.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Common/protocal.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Common/serialize.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Controller/MessageCtrl.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Controller/PromptCtrl.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Data/GAME_CONST.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Data/HERO_INFO.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Data/HERO_SKILLS.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Logic/CtrlManager.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Logic/Game.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Logic/LuaClass.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Logic/Network.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Main.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/System/Reflection/BindingFlags.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/System/Timer.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/System/ValueType.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/System/coroutine.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Test/Print_G.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Test/TestBase" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/Test/TestBase.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/UnityEngine/Bounds.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/UnityEngine/Color.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/UnityEngine/LayerMask.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/UnityEngine/Mathf.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/UnityEngine/Plane.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/UnityEngine/Quaternion.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/UnityEngine/Ray.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/UnityEngine/RaycastHit.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/UnityEngine/Time.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/UnityEngine/Touch.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/UnityEngine/Vector2.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/UnityEngine/Vector3.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/UnityEngine/Vector4.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/View/BasePanel.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/View/HeroDetailPanel.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/View/HeroPanel.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/View/MainPanel.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/View/MessagePanel.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/View/RightbarPanel.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/View/TestMoudle.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/View/TopbarPanel.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/View/UIManager.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/cjson/util.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/debugger.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/event.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/eventlib.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/events.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/list.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/lpeg/re.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/ltn12.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/mime.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/misc/functions.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/misc/misc.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/misc/strict.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/misc/utf8.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/protobuf/containers.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/protobuf/decoder.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/protobuf/descriptor.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/protobuf/encoder.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/protobuf/listener.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/protobuf/protobuf.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/protobuf/text_format.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/protobuf/type_checkers.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/protobuf/wire_format.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/slot.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/socket.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/socket/ftp.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/socket/headers.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/socket/http.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/socket/mbox.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/socket/smtp.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/socket/tp.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/socket/url.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/tolua.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/lua/typeof.lua" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/prefabs/ui/buttons" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/prefabs/ui/buttons.manifest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/prefabs/ui/herodetailpanel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/prefabs/ui/herodetailpanel.manifest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/prefabs/ui/heropanel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/prefabs/ui/heropanel.manifest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/prefabs/ui/mainpanel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/prefabs/ui/mainpanel.manifest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/prefabs/ui/packagepanel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/prefabs/ui/packagepanel.manifest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/prefabs/ui/panel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/prefabs/ui/panel.manifest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/prefabs/ui/rightbarpanel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/prefabs/ui/rightbarpanel.manifest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/prefabs/ui/topbarpanel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/prefabs/ui/topbarpanel.manifest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/textrues/altas/headimg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/textrues/altas/headimg.manifest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/textrues/altas/skill" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/raw/textrues/altas/skill.manifest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/res/drawable-hdpi/app_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/res/drawable-ldpi/app_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/res/drawable-mdpi/app_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/res/drawable-xhdpi/app_banner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/res/drawable-xhdpi/app_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/res/drawable-xxhdpi/app_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/res/drawable-xxxhdpi/app_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/res/values-v14/styles.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/res/values-v21/styles.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/res/values/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/StagingArea/res/values/styles.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-0183adaf0b3c7724faf11300b61d784e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-027c28ce5fa724245a9aad9a93863c7d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-0436f729e03cbca4195cfc73b9056afb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-095e872c85a0ea14b99034cd7c603b0f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-0b1941fde3e7d254ba3b4b93d59d6464" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-0c293fce251a52f4faf2b597cb036062" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-0d502c7e0f8f32944996f1d786243873" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-0ef6c22842896e342b8ed229393ad9ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-1602da25d7a596a4fa06f5414954d35a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-165e240ef7860874697d5bce745425fe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-1b0727a81f289ff4baa14f0c8e192a41" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-21cdf6127467f0a44beec5ab9a9380ce" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-2398e681524ce774e8e44911ab896cf5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-2717292e5d68ba048902f91826c02374" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-2749c5165f0ea79489ac0835c015807c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-29146cdcf8bf31346a6adfb438bf84e4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-2ddfafcef8a969d4aacc617b8303dad3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-2fb721b5ff1b8df4e8299bf8ddb36ed3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-30b14c580858d0e4ba5fe9eb4ec58fe9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-3534ffc8dde823048980c3d20cd023bb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-3ef2547d2ce12544794feeb94192a1bb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-4101713ad50cd674d99e3b4b994e0535" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-4383d764bd0d9694aa559e4130ac1585" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-45e37fbc9a1d2d9429b4ac75aced5782" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-4b6b7962963f7394f82e999b79f91988" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-4d9a86bbd57c7dc4c892ac190b787fad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-4ddbe9dc351dc684699ec3bcaf9d3b18" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-4ec43559dd8bc684fb883e8835a9b89b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-5309610bddc4fe545a0eda8675425a3d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-5506673fe5870df49902107be65efc75" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-5552ace578cb8f643af510fbd6232627" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-55d920ebf60615b42abb08a80f1adfdb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-5679d23c847e4244cb18609aa6cdca8c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-57b06be5514fd0944a095cbc547a8ed2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-59dbb20a7bcac2a42b458c0f91c734fa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-5a2924f7f57cd3f4e9e625315b32b9b1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-5c483b8737263ef458b7770ab314950b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-5f2a8e4557e84774bae06b666de6ec4d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-5f66c9ef6ffcca249a4c4e7b5bfd84f4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-614e6db8d3cfc6544b39f943ea272078" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-647eb7811b444064a857f1ec04175200" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-6483d3595663b2e40b52291ee4800b49" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-652f9ee46f0fd2144b4c1d202108d9ea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-6581d919ae68cb4479d88ae1623f95fc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-65b25a076f5281c4ca1e9f6838c81ca4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-6768184b13c0ccc4b980cacdb07c2ee7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-68dbac3f1508bf14a947be6a2767db7f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-6971f75664ac9934b973d60f82c66972" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-6bc5ffb18dfb94d42a180b159b371a8c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-6bd1542a03e5a99438d563136f5dacf9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-6dc100947961faf46b97fed75ad55bef" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-6ef2fa84a4d0a9e429c04f7f9830509b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-70f8ce08d9ee5db45b4708e43bfd8396" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-71559d7c336d7324a85b201bb9c53794" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-73924bd93f82d2143a825508c2310210" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-79875e93a89f112448662ec0f06d792a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-7cf9aa04203a93a4e9da0dc49875adb4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-7cfe369e944a691438e0058659eb2e45" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-7f0d80f8b15c7cd4f928fd11dd6e6558" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-83acde95f4735814a83229912d437560" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-842eb7c9763a1fa47a797765e230d4bb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-854446f4eb9ddfa4794dd1efe4601fce" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-8a3984f97783067479bdf51b3824abb1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-8ab9fa9fe5a4f9449b8b08d136627603" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-8cf74a700123f8545b7cab88a16aab93" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-8d9b260057aced04b987df84b67eb0de" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-935e673fc260dd0459f8d18612b01801" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-956a7eade9ea60d47a1e9d574aa5be44" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-95f8f758a1df87f41bbca530fda52229" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-9624c4e8a5f9f3543a9eff6c7960ebd0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-96bf59f46f0ffff43834fc16617daf31" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-96f3dd2ae57b1ba4db584b87cbc17600" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-9d81aaf504c1073438ec6f61eda67582" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-9e6458c106fcf5a40a563131f098e7a6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-9fa55779ccba81d44b5f3c30b3a0d11f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-a2a41cebf30f24d4fb3edb6c9aed84b7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-a517493ccc5a655459c1f27cc6fa9913" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-a7dab0ad7a170f74481accf0b84969bf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-aa73290d3e08cc14eb2e584778fc2198" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-ac136bdbeb91c324496c2d835e648f99" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-ac5b74d43de506a4ebe94c388817451f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-ad04c49a5c2a84d4e8de68a78095be8d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-ae93470528fa4c545b9072635027fd0c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-af9876b046fb0144395250b2ffa11f24" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-b032e931801b14540ac1a1c0c242c782" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-b18e7596d14a53d489f0e84d8676949b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-b21387ad68c79af4ba75c963b1d4e6d1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-b4c58daf9bba88040b3778749035b966" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-b579cccdda145cd409a97497f65972dc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-b6a25f3e7ab96ed4cbac1024e9cb130d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-bb05a850722f3b24bb076debbda3b783" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-bf1c2dc05b440424f8b58eea1094b509" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-bfbabe40e3f6a1c47834a9ce4c839324" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-c106e9a75344cbf4dadfcb713e2e2424" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-c1697a7f4417878408deb92b576df494" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-c32ad5ebcf1178040add762ae1f56c5d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-c550952e2e45d184d9561ed78a0d3c68" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-c6dc124d51412e940975ef708c86e967" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-c8e328434ce4a2c45b978401b11ce8b1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-cdafb981094e79744a9d1388bcf2bc70" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-cdd37574e8d7bc54085de8739192625c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-cdde4ead73752424b8cc976b7ae1ccc3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-d0028242f43110044a7e97e502231077" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-d0bbb2d1005b259439ae0ab265eda605" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-d3bc3b5cf42bb6c43ab393967244cf3b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-d529bf35f7441564388b568d33f91ab7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-d65deae55cf08e243a89f1de120407f4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-d6a99fa1397a0c949a25a31227009a25" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-e8a67197c29d6b244bc9d4b1c1566a70" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-ea14493d6dcbf0a40be6e80a30d8d36d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-ea161d63721a7ed4bbf4e62834373b90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-ea16f5e75dc932545aa22af6e77cd68d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-ea73812e2cba1dd47b0a00989504f05b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-ecac3a59c3e8d3c468010e08ec7a5093" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-ed422224d3749ce44a270b52bd6639af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-eed0720d6e9ad0643bd4065e5935511c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-f01e446e7d6d77841be6cad244b641b0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-f040929b57f729f4984ff4a210c01c35" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-f1b8248142987d348ad798ed4e9e9b2e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-f3eb6ec0294ed7147aaa72ef54237f8a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-f5b44f9812589004c89af2599f3c61c6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-fca1d6fc1ef57994cb011530e3d4d9fc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-fd16a56079f80c149b72305ec8875dc6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-fd450038c6cc8a6419a8539c43feeaca" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/UnityTempFile-ff4ac542ac116a74bb7c30e64d02064c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/tempFile.res" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/tempFile.resG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Temp/tempFile.resS" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../.vs/DotaLegend/v14/.suo" afterPath="$PROJECT_DIR$/../../.vs/DotaLegend/v14/.suo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/StreamingAssets" afterPath="$PROJECT_DIR$/../StreamingAssets/StreamingAssets" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/herodetailpanel" afterPath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/herodetailpanel" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/mainpanel" afterPath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/mainpanel" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../.gitignore" afterPath="$PROJECT_DIR$/../../.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../DotaLegend.VC.db" afterPath="$PROJECT_DIR$/../../DotaLegend.VC.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Temp/UnityLockfile" afterPath="$PROJECT_DIR$/../../Temp/UnityLockfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Temp/__Backupscenes/0.backup" afterPath="$PROJECT_DIR$/../../Temp/__Backupscenes/0.backup" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ttt.apk" afterPath="$PROJECT_DIR$/../../ttt.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AssetBundle/Prefabs/UI/HeroDetailPanel/HeroDetailPanel.prefab" afterPath="$PROJECT_DIR$/AssetBundle/Prefabs/UI/HeroDetailPanel/HeroDetailPanel.prefab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AssetBundle/Prefabs/UI/MainPanel/MainPanel.prefab" afterPath="$PROJECT_DIR$/AssetBundle/Prefabs/UI/MainPanel/MainPanel.prefab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Editor/CustomSettings.cs" afterPath="$PROJECT_DIR$/Editor/CustomSettings.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/Logic/Game.lua" afterPath="$PROJECT_DIR$/Lua/Logic/Game.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/Main.lua" afterPath="$PROJECT_DIR$/Lua/Main.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/Test/TestBase.lua" afterPath="$PROJECT_DIR$/Lua/Test/TestBase.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/View/BasePanel.lua" afterPath="$PROJECT_DIR$/Lua/View/BasePanel.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua" afterPath="$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/View/MainPanel.lua" afterPath="$PROJECT_DIR$/Lua/View/MainPanel.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/View/MessagePanel.lua" afterPath="$PROJECT_DIR$/Lua/View/MessagePanel.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lua/View/TopBarPanel.lua" afterPath="$PROJECT_DIR$/Lua/View/TopBarPanel.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scenes/Penghu.unity" afterPath="$PROJECT_DIR$/Scenes/Penghu.unity" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/SDK/WXData.cs" afterPath="$PROJECT_DIR$/Scripts/SDK/WXData.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/TestLayout.cs" afterPath="$PROJECT_DIR$/Test/TestLayout.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/Texture/TestAnimEvent.cs" afterPath="$PROJECT_DIR$/Test/Texture/TestAnimEvent.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ToLua/Lua/System/coroutine.lua" afterPath="$PROJECT_DIR$/ToLua/Lua/System/coroutine.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ToLua/Source/Generate/DelegateFactory.cs" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/DelegateFactory.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/Common/LuaBehaviour.cs" afterPath="$PROJECT_DIR$/Scripts/Common/LuaBehaviour.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/Manager/LuaManager.cs" afterPath="$PROJECT_DIR$/Scripts/Manager/LuaManager.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/TestWWWDownTexture.cs" afterPath="$PROJECT_DIR$/Test/TestWWWDownTexture.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ToLua/Source/Generate/LuaBinder.cs" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/LuaBinder.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/StreamingAssets.manifest" afterPath="$PROJECT_DIR$/../StreamingAssets/StreamingAssets.manifest" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ToLua/Source/Generate/LuaFramework_LuaBehaviourWrap.cs" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/LuaFramework_LuaBehaviourWrap.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ToLua/Source/Generate/LuaFramework_LuaManagerWrap.cs" afterPath="$PROJECT_DIR$/ToLua/Source/Generate/LuaFramework_LuaManagerWrap.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/files.txt" afterPath="$PROJECT_DIR$/../StreamingAssets/files.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/Logic/Game.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/Logic/Game.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/System/coroutine.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/System/coroutine.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/Test/TestBase.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/Test/TestBase.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/Main.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/Main.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/View/BasePanel.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/View/BasePanel.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/View/HeroDetailPanel.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/View/HeroDetailPanel.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/View/MainPanel.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/View/MainPanel.lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/herodetailpanel.manifest" afterPath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/herodetailpanel.manifest" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/mainpanel.manifest" afterPath="$PROJECT_DIR$/../StreamingAssets/prefabs/ui/mainpanel.manifest" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../DotaLegend.Editor.Plugins.csproj" afterPath="$PROJECT_DIR$/../../DotaLegend.Editor.Plugins.csproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../DotaLegend.Editor.csproj" afterPath="$PROJECT_DIR$/../../DotaLegend.Editor.csproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../DotaLegend.Plugins.csproj" afterPath="$PROJECT_DIR$/../../DotaLegend.Plugins.csproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../DotaLegend.csproj" afterPath="$PROJECT_DIR$/../../DotaLegend.csproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ProjectSettings/GraphicsSettings.asset" afterPath="$PROJECT_DIR$/../../ProjectSettings/GraphicsSettings.asset" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/View/MessagePanel.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/View/MessagePanel.lua" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StreamingAssets/lua/View/TopBarPanel.lua" afterPath="$PROJECT_DIR$/../StreamingAssets/lua/View/TopBarPanel.lua" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ProjectSettings/ProjectSettings.asset" afterPath="$PROJECT_DIR$/../../ProjectSettings/ProjectSettings.asset" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,37 +336,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="HeroPanel.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lua/View/HeroPanel.lua">
+      <file leaf-file-name="LuaBehaviour.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lua/Common/LuaBehaviour.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4107">
-              <caret line="183" column="76" lean-forward="false" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="76" />
+            <state relative-caret-position="700">
+              <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasePanel.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lua/View/BasePanel.lua">
+      <file leaf-file-name="TestMoudle.lua" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lua/Test/TestMoudle.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2407">
-              <caret line="101" column="6" lean-forward="false" selection-start-line="101" selection-start-column="6" selection-end-line="101" selection-end-column="6" />
+            <state relative-caret-position="425">
+              <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestMoudle.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lua/View/TestMoudle.lua">
+      <file leaf-file-name="class.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lua/Common/class.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopbarPanel.lua" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UIManager.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lua/View/UIManager.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopbarPanel.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lua/View/TopbarPanel.lua">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
@@ -107,11 +386,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HeroDetailPanel.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua">
+      <file leaf-file-name="TestBase.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lua/Test/TestBase.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2525">
-              <caret line="125" column="0" lean-forward="true" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+            <state relative-caret-position="475">
+              <caret line="19" column="3" lean-forward="false" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -120,28 +399,28 @@
       <file leaf-file-name="Game.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lua/Logic/Game.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="45" column="30" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+            <state relative-caret-position="550">
+              <caret line="58" column="4" lean-forward="false" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainPanel.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lua/View/MainPanel.lua">
+      <file leaf-file-name="BasePanel.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lua/View/BasePanel.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="63" column="58" lean-forward="false" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+            <state relative-caret-position="2525">
+              <caret line="101" column="6" lean-forward="false" selection-start-line="101" selection-start-column="6" selection-end-line="101" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lua/Main.lua">
+      <file leaf-file-name="HeroDetailPanel.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="798">
+              <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -150,18 +429,8 @@
       <file leaf-file-name="MessagePanel.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lua/View/MessagePanel.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="675">
               <caret line="27" column="2" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RightbarPanel.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lua/View/RightbarPanel.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -169,10 +438,19 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="NewLua" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>onmessage</find>
       <find>print</find>
+      <find>display</find>
+      <find>startupdate</find>
     </findStrings>
     <replaceStrings>
       <replace>height</replace>
@@ -199,20 +477,22 @@
         <option value="$PROJECT_DIR$/ToLua/Lua/System/coroutine.lua" />
         <option value="$PROJECT_DIR$/Lua/Test/TestBase.lua" />
         <option value="$PROJECT_DIR$/Lua/Main.lua" />
-        <option value="$PROJECT_DIR$/Lua/Logic/Game.lua" />
         <option value="$PROJECT_DIR$/Lua/View/BasePanel.lua" />
         <option value="$PROJECT_DIR$/Lua/View/MessagePanel.lua" />
         <option value="$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua" />
-        <option value="$PROJECT_DIR$/Lua/View/MainPanel.lua" />
         <option value="$PROJECT_DIR$/Lua/View/TopbarPanel.lua" />
+        <option value="$PROJECT_DIR$/Lua/View/MainPanel.lua" />
+        <option value="$PROJECT_DIR$/Lua/Common/LuaBehaviour.lua" />
+        <option value="$PROJECT_DIR$/Lua/Logic/Game.lua" />
+        <option value="$PROJECT_DIR$/Lua/Test/TestMoudle.lua" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2409" />
-    <option name="y" value="196" />
+    <option name="x" value="-2411" />
+    <option name="y" value="205" />
     <option name="width" value="2418" />
-    <option name="height" value="1318" />
+    <option name="height" value="1309" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -230,22 +510,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LuaFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LuaFramework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ToLua" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="LuaFramework" />
@@ -288,19 +555,78 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LuaFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LuaFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lua" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LuaFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LuaFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lua" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LuaFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LuaFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lua" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/素材/Pt_updateEvent.lua" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Github\DotaLegend\Assets\LuaFramework\Lua\Test" />
+      <recent name="D:\Github\DotaLegend\Assets\LuaFramework\Lua" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -547,7 +873,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2409" y="196" width="2418" height="1318" extended-state="6" />
+    <frame x="-2411" y="205" width="2418" height="1309" extended-state="1" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -555,7 +881,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24978831" sideWeight="0.5015625" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25170648" sideWeight="0.5015625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -564,7 +890,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13708334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20666666" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20666666" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -575,7 +901,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23210071" sideWeight="0.4984375" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23210071" sideWeight="0.4984375" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -583,13 +909,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="lua-line">
-          <url>file://$PROJECT_DIR$/Lua/debugger.lua</url>
-          <line>1</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
@@ -599,68 +918,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Lua/Data/HERO_INFO.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/Common/protocal.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/MainPanel.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/MessagePanel.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/Logic/Game.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/TestMoudle.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/TestGameObjectPrefab.prefab">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Resources/UIFormsConfigInfo.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -700,7 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -708,7 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4800">
           <caret line="192" column="0" lean-forward="true" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,20 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/eventlib.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/events.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/Manager/DataManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -758,7 +999,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,7 +1076,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,7 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,6 +1090,137 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1925">
           <caret line="77" column="6" lean-forward="false" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/Common/functions.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToLua/Lua/System/coroutine.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="108" column="24" lean-forward="false" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToLua/Lua/UnityEngine/Vector2.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1875">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToLua/Lua/tolua.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToLua/Lua/event.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-422">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/View/HeroPanel.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4575">
+          <caret line="183" column="76" lean-forward="false" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/View/RightbarPanel.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/Main.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/eventlib.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/events.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/Logic/CtrlManager.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/View/MainPanel.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="807">
+          <caret line="116" column="34" lean-forward="false" selection-start-line="116" selection-start-column="34" selection-end-line="116" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/素材/Pt_updateEvent.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2475">
+          <caret line="99" column="23" lean-forward="false" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/素材/Pt_update.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6425">
+          <caret line="257" column="0" lean-forward="false" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/素材/update.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4825">
+          <caret line="193" column="37" lean-forward="false" selection-start-line="193" selection-start-column="37" selection-end-line="193" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/View/MessagePanel.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="27" column="2" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/Common/UGUIDefine.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/Common/LuaBehaviour.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -864,103 +1233,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/Common/functions.lua">
+    <entry file="file://$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ToLua/Lua/System/coroutine.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="108" column="24" lean-forward="false" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ToLua/Lua/UnityEngine/Vector2.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1875">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ToLua/Lua/tolua.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ToLua/Lua/event.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-422">
-          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/Main.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/Logic/Game.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="45" column="30" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+        <state relative-caret-position="798">
+          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lua/View/BasePanel.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2407">
+        <state relative-caret-position="2525">
           <caret line="101" column="6" lean-forward="false" selection-start-line="101" selection-start-column="6" selection-end-line="101" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/HeroDetailPanel.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2525">
-          <caret line="125" column="0" lean-forward="true" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/HeroPanel.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4107">
-          <caret line="183" column="76" lean-forward="false" selection-start-line="183" selection-start-column="11" selection-end-line="183" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/MainPanel.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="63" column="58" lean-forward="false" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/MessagePanel.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="27" column="2" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/RightbarPanel.lua">
+    <entry file="file://$PROJECT_DIR$/Lua/Common/class.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -968,10 +1257,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lua/View/TestMoudle.lua">
+    <entry file="file://$PROJECT_DIR$/Lua/View/UIManager.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -980,6 +1269,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/Logic/Game.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="58" column="4" lean-forward="false" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lua/Test/TestMoudle.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
           <folding />
         </state>
       </provider>

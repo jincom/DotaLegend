@@ -17,6 +17,7 @@ public class LuaFramework_LuaManagerWrap
 		L.RegFunction("GetLuaFunction", GetLuaFunction);
 		L.RegFunction("__eq", op_Equality);
 		L.RegFunction("__tostring", ToLua.op_ToString);
+		L.RegVar("MainState", get_MainState, null);
 		L.EndClass();
 	}
 
@@ -173,6 +174,25 @@ public class LuaFramework_LuaManagerWrap
 		catch(Exception e)
 		{
 			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int get_MainState(IntPtr L)
+	{
+		object o = null;
+
+		try
+		{
+			o = ToLua.ToObject(L, 1);
+			LuaFramework.LuaManager obj = (LuaFramework.LuaManager)o;
+			LuaInterface.LuaState ret = obj.MainState;
+			ToLua.PushObject(L, ret);
+			return 1;
+		}
+		catch(Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e, o == null ? "attempt to index MainState on a nil value" : e.Message);
 		}
 	}
 }

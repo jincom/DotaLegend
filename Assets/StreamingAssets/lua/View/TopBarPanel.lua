@@ -13,7 +13,7 @@ require "Common/functions"
 local cls = class(require "View/BasePanel")
 
 function cls:ctor(go)
-    logWarn("MessagePanel CTOR")
+    --logWarn("MessagePanel CTOR")
     self.baseUIForm.CurrentUIType.UIForms_ShowMode = UIFormShowMode.Normal
     self.baseUIForm.CurrentUIType.UIForms_Type =  UIFormsType.Fixed
     

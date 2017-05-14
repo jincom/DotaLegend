@@ -2,6 +2,9 @@
 --package.path = "D:\\Unity Project\\PenghuClient\\Assets\\LuaFramework\\Lua\\?.lua;"..package.path
 --print(package.path)
 --require("debugger")("127.0.0.1",8080, "luaidekey")
+local UE = UnityEngine
+local GO = UE.GameObject
+local LuaBehaviour = LuaFramework.LuaBehaviour
 require "3rd/pbc/protobuf"
 
 local lpeg = require "lpeg"
@@ -51,6 +54,9 @@ function Game.OnInitOK()
     uiMgr:ShowUIForms('TopbarPanel')
     uiMgr:ShowUIForms('MainPanel')
     uiMgr:ShowUIForms('RightbarPanel')
+
+    local go = GO("hhh")
+    LuaBehaviour.Add(go, require('Test.TestMoudle'))
     
     logWarn('LuaFramework InitOK--->>>')
     

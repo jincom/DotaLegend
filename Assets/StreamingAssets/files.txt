@@ -6,7 +6,7 @@ lua/eventlib.lua|5b6f6d67f568ad41f97c619d533b89d0|8575
 lua/events.lua|f890c432a3de00ab8eb9c80bce922789|991
 lua/list.lua|5d6f7b03878b1c9a408148dfa5d3cd66|3694
 lua/ltn12.lua|5f0d3400869c871e35cda3ff7551209a|8698
-lua/Main.lua|decb456b0847fa80a712568165ddb51a|399
+lua/Main.lua|942499a8c9de93d86512cd9b3fa85b6d|939
 lua/mime.lua|2e001d487613c4ae82f79ac23b8c978f|2487
 lua/slot.lua|499667eb6dff62997f645aab5dd1ac55|841
 lua/socket.lua|f62021b8c3d4b62d419fdb2054c86e31|4448
@@ -62,9 +62,9 @@ lua/cjson/util.lua|d9187071b6c2cae70ac95cff4170bf36|6837
 lua/Common/class.lua|23fc3e379be52fa51b67809b50328ad2|1672
 lua/Common/define.lua|ea39ef9bf32e6f0af1c1a96ff15fa7e1|995
 lua/Common/functions.lua|499c194ef6e2f87fe4f9e1bab2490cfa|1148
+lua/Common/LuaBehaviour.lua|309999274e346c97da8ff9bf087488ce|1053
 lua/Common/protocal.lua|8eb9b0f596ef376c488cfaa1a9293a1f|296
 lua/Common/serialize.lua|82c4b95aa88ed3d3654f3ba326f50021|6653
-lua/Common/UGUIDefine.lua|33c8e17853758aa044f40f4ebc93d86c|170
 lua/Common/UnityApi.lua|7ebd6b72d3a1dbaff0913cb2c9c6ee28|421346
 lua/Controller/MessageCtrl.lua|9dae410267472a32b8fa26348bceb859|711
 lua/Controller/PromptCtrl.lua|ff6321b8827d797ed2958ca34b3ffc88|4961
@@ -72,7 +72,7 @@ lua/Data/GAME_CONST.lua|ce45b1052783c6594b309f56743a007c|201
 lua/Data/HERO_INFO.lua|b9eded08504222df7aee97936a799553|4478
 lua/Data/HERO_SKILLS.lua|de3ddaeb3226a23406fec9176fa462dd|6283
 lua/Logic/CtrlManager.lua|024d81ad90d9f62a4b121e00e067efec|739
-lua/Logic/Game.lua|0c847dc5d3ee9cd17aae6e176a6b2c9f|5609
+lua/Logic/Game.lua|091bf8f34658fce325f3ea4b0a8d0463|5206
 lua/Logic/LuaClass.lua|281529a11fe604b67523c328f8412cc0|755
 lua/Logic/Network.lua|4ad1a81a24a23e91bf3162e91557d40e|3685
 lua/lpeg/re.lua|fb58fd8e4d992ab829a9f5c94d1a3bb4|6365
@@ -103,6 +103,7 @@ lua/System/Reflection/BindingFlags.lua|f69df22b1b4cada82f2be1ae96f9c182|876
 lua/Test/Print_G.lua|9e363a4a483d98e23a9cdf8261d2c337|107
 lua/Test/TestBase|d41d8cd98f00b204e9800998ecf8427e|0
 lua/Test/TestBase.lua|6dc1ccfa739ca3f54d2318ac842b0610|505
+lua/Test/TestMoudle.lua|60b0f02a785b66fc21a9b6f699e1d38e|268
 lua/UnityEngine/Bounds.lua|9c5d5ce983a1a5cf2aadc2a5645cea30|4216
 lua/UnityEngine/Color.lua|09717fa5d0599b31b361cc96012c9d5a|5782
 lua/UnityEngine/LayerMask.lua|3dc8a5c4cb474b8d19bac887d3a98a0f|1110
@@ -116,14 +117,13 @@ lua/UnityEngine/Touch.lua|91587e617d1fb222e1d230eed7087f45|2019
 lua/UnityEngine/Vector2.lua|c7197a5cc9a152fc727a9dd2d80263af|2977
 lua/UnityEngine/Vector3.lua|f2cf0641d782cdef68f17171e72f54a8|12219
 lua/UnityEngine/Vector4.lua|6d48bbfe247c7bf5419864c6a9352f99|4551
-lua/View/BasePanel.lua|009cb456eabe776c52f79b2ffba5662e|2364
-lua/View/HeroDetailPanel.lua|77f0e153ee5a831b6951aed98f391ecf|6787
+lua/View/BasePanel.lua|5da4bc3e8ab45a38de59dcd94cd9b6b1|2374
+lua/View/HeroDetailPanel.lua|64c0a99f349f234d038dd15b90da44b8|5901
 lua/View/HeroPanel.lua|659af546edaaca2dbc8cba9ba84abc6a|7890
-lua/View/MainPanel.lua|ca4172517a542458aec97037210e1f29|1754
-lua/View/MessagePanel.lua|ae0152b3d5677537028eda3856bbaec8|1514
+lua/View/MainPanel.lua|060f0ded3c0d8be834f3daa01c9d2434|4544
+lua/View/MessagePanel.lua|121251251dd48ca36b29ed5ac969f01c|1520
 lua/View/RightbarPanel.lua|be2e7e479be62b7308ee581e65dd0dde|2463
-lua/View/TestMoudle.lua|3c271c96db5ff9a65c9d9f47b921ab64|247
-lua/View/TopbarPanel.lua|7d895e20df1e45e699d2842fa474d1e6|1032
+lua/View/TopbarPanel.lua|25af5fe23ccd9f7f59dcf9d4391de92a|1034
 lua/View/UIManager.lua|f91c584a3fddc7a4dc6f8ac60a8f09b2|4443
 prefabs/ui/buttons|920b7c3e366e5a0e557992013a818833|42557
 prefabs/ui/buttons.manifest|df06b78511298c1f84ab1a4cd76061b9|756

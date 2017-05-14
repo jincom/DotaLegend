@@ -13,22 +13,22 @@ local EventCenter = require("events")
 
 function cls:ctor(go)
     --在构造函数定义属于obj的变量
-    logWarn('BasePanel CTOR')
+    --logWarn('BasePanel CTOR')
     self.gameObject = go
     self.transform = go.transform
     self.rectTransform = go:GetComponent(typeof(RectTransform))
     self.baseUIForm = go:GetComponent('LuaUIForm')
-    logWarn('baseUIForm1 is '..type(self.baseUIForm))
+    --logWarn('baseUIForm1 is '..type(self.baseUIForm))
 end
 
 function cls:Awake()
-    logWarn('BasePanel Awake')
+    --logWarn('BasePanel Awake')
     --self:RegistyEvents()
     --变量的初始化
 end
 
 function cls:RegistyEvents()
-    logWarn('BasePanel RegistyEvent')
+    --logWarn('BasePanel RegistyEvent')
 end
 
 function cls:FunctionDefine()
@@ -99,7 +99,7 @@ function cls:RemoveEvent(event_name, handler)
 end
 
 function cls:OnMessage(message)
-    logWarn('BasePanel OnMessage')
+    --logWarn('BasePanel OnMessage')
 end
 
 return cls

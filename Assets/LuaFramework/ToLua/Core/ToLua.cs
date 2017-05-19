@@ -178,7 +178,7 @@ namespace LuaInterface
                         }
                     }
                 }
-
+               
                 Debugger.Log(StringBuilderCache.GetStringAndRelease(sb));
                 return 0;
             }

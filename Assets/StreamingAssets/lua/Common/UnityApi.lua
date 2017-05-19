@@ -3872,6 +3872,7 @@ function MonoBehaviour:StopAllCoroutines() end
 --static method,use '.'
 function MonoBehaviour.print() end 
 
+---@class GameObject
 GameObject = {} 
 --*
 --[Comment]

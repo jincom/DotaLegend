@@ -173,11 +173,21 @@ namespace LuaFramework
             //依次处理该AB的所有请求
             for (int i = 0; i < list.Count; i++)
             {
+                AssetBundle ab = bundleInfo.m_AssetBundle;
+
                 string[] assetNames = list[i].assetNames;
                 List<UObject> result = new List<UObject>();
 
-                AssetBundle ab = bundleInfo.m_AssetBundle;
-                
+                //ab.AllAssetNames;
+                if (assetNames.Length == 1 && assetNames[0].Equals("*"))
+                {
+                    assetNames = ab.GetAllAssetNames();
+                    //for (int z = 0; z < assetNames.Length; z++)
+                    //{
+                    //    Debug.LogFormat("AssetName: {0}", assetNames[z]);
+                    //}
+                }
+               
                 //
                 for (int j = 0; j < assetNames.Length; j++)
                 {

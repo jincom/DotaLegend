@@ -2,30 +2,52 @@ local UE = UnityEngine
 local Image = UE.UI.Image
 local Text = UE.UI.Text
 local ET = LuaFramework.EventTrigger
+local RT = UE.RectTransform
+local UIEL = LuaFramework.UIEventListener
+local Ease = DG.Tweening.Ease
 
 require 'Common/class'
 require 'Common/define'
 require 'Common/functions'
 
-local UIEL = LuaFramework.UIEventListener
 
+
+---@class HeroDetailPanel:BasePanel
 local M = class(require 'View/BasePanel')
 local data_hero_info = require('Data/HERO_INFO')
 local data_hero_skills = require('Data/HERO_SKILLS')
+local sprite_proxy = require('Logic.SpriteProxy')
 HeroDetailPanel = M
 ---
 --@module M
 --@type M
 
 function M:ctor(go)
+  --初始化panel属性
   self.baseUIForm.CurrentUIType.UIForms_ShowMode = UIFormShowMode.Normal
   self.baseUIForm.CurrentUIType.UIForms_Type =  UIFormsType.PopUp
+
+  self.hero_detail = Util.Child(go, 'hero_detail')
   self.skill_popup = Util.Child(self.transform, "skill_popup")
   self.ub_btn_close = Util.Child(self.transform, 'hero_detail/btn_close')
   
   self.description = Util.Child(self.skill_popup, "skill_list/viewport/content/skill_1/description")
   self.content = Util.Child(self.skill_popup, "skill_list/viewport/content")
+  --获取popup面板的gameObject
+  self.popup_list = {property = nil, skill = nil, portrait = nil}
+  self.popup_list.property = Util.Child(go, 'property_popup')
+  self.popup_list.skill = Util.Child(go, 'skill_popup')
+  self.popup_list.portrait = Util.Child(go, 'portrait_popup')
 
+  --获取togglede的gameObject
+  self.toggle_parent = Util.Child(go, 'hero_detail/bottom')
+  self.toggle_list = {property = nil, skill = nil, portrait = nil}
+  self.toggle_list.property = Util.Child(self.toggle_parent, 'toe_property')
+  self.toggle_list.portrait = Util.Child(self.toggle_parent, 'toe_portrait')
+  self.toggle_list.skill = Util.Child(self.toggle_parent, 'toe_skill')
+
+
+  --设置技能技能描述面板unMaskAble
   Util.SetMaskableInChild(self.description, false)
   self.UIEL = go:AddComponent(typeof(UIEL))
   self.UIEL.self = self
@@ -36,7 +58,8 @@ function M:ctor(go)
 end
 
 function M:Awake()
-  self:BrocastEvent(Protocal.REQ_HERO_INDEX, {name = Protocal.REQ_HERO_INDEX})
+  self:InitDOTween()
+  self.BrocastEvent(Protocal.REQ_HERO_INDEX, {name = Protocal.REQ_HERO_INDEX})
   self.skill_spritesname = self.GetSkillSpriteNames()
 
   local skill_list = Util.Childs(self.content):ToTable()
@@ -51,8 +74,50 @@ function M:Awake()
     item.txt_name = Util.Child(v, "txt_name"):GetComponent(typeof(Text))
     self.skill_list[i] = item
   end
+  --resMgr:LoadSprite('skill', self.skill_spritesname, self.onFinishLoadSprite)
+end
 
-  resMgr:LoadSprite('skill', self.skill_spritesname, self.onFinishLoadSprite)
+function M:InitDOTween()
+  if not istable(self.tween_list) then
+    self.tween_list =
+    {
+      portrait = nil,
+      property = nil,
+      skill = nil,
+      herodetail = nil,
+    }
+  end
+  --popup tween
+  self.popup_site = false
+  local tweens = self.tween_list
+  for k, v in pairs(self.popup_list) do
+    local rt_popup = v:GetComponent(typeof(RT))
+    local tween = rt_popup:DOAnchorPos(Vector2(150, 0), 0.4, false):From()
+    tween:OnPlay(function()
+      if v.activeSelf == false then
+        self.popup_site = true
+        v:SetActive(true)
+      else
+        self.popup_site = false
+      end
+    end)
+
+    tween:OnRewind(function() v:SetActive(false); end)
+    tween:OnComplete(function() v.transform:SetAsFirstSibling() end)
+    tween:Pause()
+    tween:SetAutoKill(false)
+    tween:SetEase(Ease.OutExpo)
+    tweens[k] = tween
+    --print(k, tweens[k]:GetType():ToString())
+  end
+
+  self.hero_detail_site = false
+  local rt_detail = self.hero_detail:GetComponent(typeof(RT))
+  local detail_tween = rt_detail:DOAnchorPos(Vector2(214, 0), 0.4, false)
+  detail_tween:Pause()
+  detail_tween:SetAutoKill(false)
+  detail_tween:SetEase(Ease.OutExpo)
+  tweens.herodetail = detail_tween
 end
 
 --事件注册函数
@@ -63,11 +128,17 @@ function M:RegistyEvents()
     uiMgr:CloseUIForms('HeroDetailPanel')
   end)
 
-  self:AddEvent(Protocal.RESP_HERO_INDEX, self.OnMessage)
+  self.AddEvent(Protocal.RESP_HERO_INDEX, self.OnMessage)
+
+  for _, v in pairs(self.toggle_list) do
+    print('toggleparent', v.name)
+    self.UIEL:AddToggleChange(v, self.onToggleChange)
+  end
 end
 
 --外都调用的方法在这定义
 function M:FunctionDefine()
+
   ----------OnMessage------------------------------
   self.OnMessage = function(message)
     if message == nil then return end
@@ -77,23 +148,11 @@ function M:FunctionDefine()
     if name == Protocal.RESP_HERO_INDEX then
       if not isnumber(data) then return end
       self.i_select_hero_index = data
-      --print('接收到英雄数据响应', data)
-      self:SetSkillPopup(data)
+      print('接收到英雄数据响应', data)
+      --self:SetSkillPopup(data)
     end
   end
-  -----------onFinishLoadSprite-------------------------
-  self.onFinishLoadSprite = function(objs)
-    logWarn('onFinishLoadSprite')
-    local t = objs:ToTable()
-    if(self.skill_sprites == nil) then
-      self.skill_sprites = {}
-    end
-    local sn = self.skill_spritesname
-    for i = 0, objs.Length - 1 do
-      self.skill_sprites[sn[i + 1]] = objs[i]
-    end
-    self:SetSkillPopup(self.i_select_hero_index)
-  end
+
   -----------onShillItemDown---------------------------
   self.onSkillItemDown = function(go, data)
     --print('onSkillItemDown')
@@ -105,58 +164,125 @@ function M:FunctionDefine()
     self.description:SetActive(true)
     local text1 = Util.Child(self.description, "text1"):GetComponent(typeof(Text))
     local strs = string.split(Util.GetParent(go).name, '_')
-    --print('parent name', Util.GetParent(go).name)
     local skill_i = tonumber(strs[2])
-    --print('skill_i', skill_i)
-    local des_str = self.hero_info[self.i_select_hero_index].skills[skill_i].SKILL_DESCRIPTION
+    local skill_idx = data_hero_info[self.i_select_hero_index].HERO_SKILLS
+    local des_str = data_hero_skills[skill_idx[skill_i]].SKILL_DESCRIPTION
     text1.text = des_str
   end
+
   ------------onSkillItemUp--------------------------------
   self.onSkillItemUp = function(go, data)
     --print('onSkillItemUp')
     self.description:SetActive(false)
   end
 
+  ------------onToggleChange------------------------------
+  self.onToggleChange = function(this, go, isOn)
+    if isuserdata(go) then
+      local name = go.name
+      if name == 'toe_property' then
+        self:SetPropertyPopup(self.i_select_hero_index, isOn)
+      elseif name == 'toe_skill' then
+        self:SetSkillPopup(self.i_select_hero_index, isOn)
+      elseif name == 'toe_portrait' then
+        self:SetPortraitPopup(self.i_select_hero_index, isOn)
+      end
+    end
+  end
+
 end
 
 function M:Display()
-  self:BrocastEvent(Protocal.REQ_HERO_INDEX, {name = Protocal.REQ_HERO_INDEX})
+  self.BrocastEvent(Protocal.REQ_HERO_INDEX, {name = Protocal.REQ_HERO_INDEX})
+  local toggle_portrait = self.toggle_list.portrait
+  toggle_portrait:GetComponent(typeof(UE.UI.Toggle)).isOn = true
   self.gameObject:SetActive(true)
 end
 
-
-function M:SetSkillPopup(index)
-  --print('index type', type(index))
-  --print('self type', type(self))
-  if not isnumber(index) then return end
-  local hi = self.hero_info
-  if not istable(hi) then return end
-
-  if not hi[index] or not istable(hi[index]) then
-    hi[index] = {}
-    hi[index].skills = self.GetHeroSkillData(index)
+--隐藏窗体方法
+function M:Hiding()
+  if self.current_pop then
+    self.toggle_list[self.current_pop]:GetComponent(typeof(UE.UI.Toggle)).isOn = false
+    self.current_pop = nil
+    self.pre_pop = nil
   end
-  local t = hi[index]
-  if not istable(t.skills) then return end
-  for i, v in ipairs(t.skills) do
-    --print('ipairs index:'..type(i))
+  self.gameObject:SetActive(false)
+end
 
 
-    --设置技能图标
-    local img_icon = self.skill_list[i].img_icon
-    if isuserdata(img_icon) then
-      img_icon.sprite = self.skill_sprites[v.SKILL_SPRITE]
-      --print('icon', v.SKILL_SPRITE)
+------------弹出技能面板-------------------------------
+function M:SetSkillPopup(index, is_display)
+
+  self:HideOtherPopup('skill', is_display)
+  for k, v in pairs(sprite_proxy) do
+    print(k, v)
+  end
+  if not isnumber(index) then return end
+
+  local skill_idx = data_hero_info[index].HERO_SKILLS
+  print('SetSkillPopup', index)
+  local skillicon = sprite_proxy.skillicon
+  for k, v in pairs(skill_idx) do
+    if isnumber(k) then
+      local skill = data_hero_skills[v]
+      --设置技能图标
+      local img_icon = self.skill_list[k].img_icon
+      --print('img_icon', type(img_icon))
+      if isuserdata(img_icon) then
+        img_icon.sprite = skillicon[skill.SKILL_SPRITE]
+      end
+      --设置技能名称
+      local txt_name = self.skill_list[k].txt_name
+      if isuserdata(txt_name) then
+        txt_name.text = skill.SKILL_NAME
+      end
     end
-    --设置技能名称
-    local txt_name = self.skill_list[i].txt_name
-    if isuserdata(txt_name) then
-      txt_name.text = v.SKILL_NAME
-    end
-
   end
 
 end
+
+---------弹出属性面板------------------------------
+---@param number index
+---@param bool  is_display
+function M:SetPropertyPopup(index, is_display)
+
+  self:HideOtherPopup('property', is_display)
+
+end
+
+---------弹出原画面板------------------------------
+function M:SetPortraitPopup(index, is_display)
+
+  self:HideOtherPopup('portrait', is_display)
+
+end
+
+-----------隐藏其他popup面板除了name面板------------
+function M:HideOtherPopup(name, is_display)
+
+  print('before', is_display, name, self.current_pop, self.pre_pop)
+  if is_display then
+    if not self.pre_pop or not self.current_pop then
+      self.tween_list['herodetail']:PlayForward()
+    end
+    self.tween_list[name]:PlayForward()
+    self.pre_pop = self.current_pop
+    self.current_pop = name
+  else
+    self.tween_list[name]:PlayBackwards()
+    self.pre_pop = self.current_pop
+    self.current_pop = nil
+    local ft = FrameTimer.New(function()
+      if not self.current_pop then
+        self.tween_list['herodetail']:PlayBackwards()
+      end
+    end, 1, 1)
+    ft:Start()
+  end
+
+
+end
+
 
 function M.GetSkillSpriteNames()
   local sprites = {}

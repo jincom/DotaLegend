@@ -3,7 +3,6 @@
 --此文件由[BabeLua]插件自动
 require "Common/define"
 require "Common/functions"
-require "Common/serialize"
 
 --以某个类为索引，返回这个类的成员变量和方法
 local _class = {}
@@ -59,22 +58,5 @@ function class(super)
 	return class_type
 end
 
---base = class()
---function base:ctor(name)
---    self.t = {["name"] = name}
---end
-
---function base:hello()
---    logWarn('self.t.name:'..self.t.name)
---end
-
---base1 = class(base)
---base2 = class(base)
-
---ibase1 = base1.new("ibase1")
---ibase2 = base2.new("ibase2")
---ibase1:hello()
---ibase2:hello()
---end
 --endregion
 

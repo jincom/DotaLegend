@@ -7,13 +7,12 @@ require "Common/class"
 require "Common/define"
 require "Common/functions"
 
-
+---@class BasePanel
 local cls = class()
 local EventCenter = require("events")
 
 function cls:ctor(go)
     --在构造函数定义属于obj的变量
-    --logWarn('BasePanel CTOR')
     self.gameObject = go
     self.transform = go.transform
     self.rectTransform = go:GetComponent(typeof(RectTransform))
@@ -22,13 +21,11 @@ function cls:ctor(go)
 end
 
 function cls:Awake()
-    --logWarn('BasePanel Awake')
-    --self:RegistyEvents()
-    --变量的初始化
+
 end
 
 function cls:RegistyEvents()
-    --logWarn('BasePanel RegistyEvent')
+
 end
 
 function cls:FunctionDefine()
@@ -84,17 +81,17 @@ function cls:CloseUIForm(uiFormName)
 end
 
 --注册Panel事件
-function cls:AddEvent(event_name, handler)
+function cls.AddEvent(event_name, handler)
     EventCenter.AddListener(event_name, handler)
 end
 
 --广播Panel事件
-function cls:BrocastEvent(event_name, ...)
+function cls.BrocastEvent(event_name, ...)
     EventCenter.Brocast(event_name, ...)
 end
 
 --反注册Panel事件
-function cls:RemoveEvent(event_name, handler)
+function cls.RemoveEvent(event_name, handler)
     EventCenter.RemoveListener(event_name, handler)
 end
 

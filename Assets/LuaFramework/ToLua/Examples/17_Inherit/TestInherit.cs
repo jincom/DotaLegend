@@ -11,7 +11,10 @@ public class TestInherit : MonoBehaviour
 
         function LuaTransform.Extend(u)         
             local t = {}                        
-            local _position = u.position      
+            local _position = u.position 
+            local _rotation = u.rotation
+            print('_position', u.position)
+            print('_rotation', u.rotation)     
             tolua.setpeer(u, t)     
 
             t.__index = t
@@ -47,6 +50,7 @@ public class TestInherit : MonoBehaviour
         function Test(node)        
             local v = Vector3.one           
             local transform = LuaTransform.Extend(node)  
+
             --local transform = node                                                  
 
             local t = os.clock()            

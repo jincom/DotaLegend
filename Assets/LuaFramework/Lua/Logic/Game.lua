@@ -38,7 +38,7 @@ local WWW = UnityEngine.WWW;
 
 --初始化完成，发送链接服务器信息--
 function Game.OnInitOK()
-
+    require('Logic.SpriteProxy')
     networkMgr:SendConnect();
 
     --this.test_class_func();
@@ -55,23 +55,25 @@ function Game.OnInitOK()
     uiMgr:ShowUIForms('MainPanel')
     uiMgr:ShowUIForms('RightbarPanel')
 
-    local go = GO("hhh")
-    LuaBehaviour.Add(go, require('Test.TestMoudle'))
-    
+
+
+
     logWarn('LuaFramework InitOK--->>>')
-    
+
 end
 
 
+
+
 --测试协同--
-function Game.test_coroutine()    
+function Game.test_coroutine()
     logWarn("coroutine before");
-    coroutine.wait(1);	
+    coroutine.wait(1);
     logWarn("coroutine after");
-	
+
     local www = WWW("http://bbs.ulua.org/readme.txt");
     coroutine.www(www);
-    logWarn(www.text);    	
+    logWarn(www.text);
 end
 
 --测试sproto--
@@ -132,13 +134,13 @@ end
 
 --测试lpeg--
 function Game.test_lpeg_func()
-	logWarn("test_lpeg_func-------->>");
-	-- matches a word followed by end-of-string
-	local p = lpeg.R"az"^1 * -1
+    logWarn("test_lpeg_func-------->>");
+    -- matches a word followed by end-of-string
+    local p = lpeg.R"az"^1 * -1
 
-	print(p:match("hello"))        --> 6
-	print(lpeg.match(p, "hello"))  --> 6
-	print(p:match("1 hello"))      --> nil
+    print(p:match("hello"))        --> 6
+    print(lpeg.match(p, "hello"))  --> 6
+    print(p:match("1 hello"))      --> nil
 end
 
 --测试lua类--
@@ -152,7 +154,7 @@ function Game.test_pblua_func()
     login.id = 2000;
     login.name = 'game';
     login.email = 'jarjin@163.com';
-    
+
     local msg = login:SerializeToString();
     LuaHelper.OnCallLuaFunc(msg, this.OnPbluaCall);
 end
@@ -219,5 +221,5 @@ end
 
 --销毁--
 function Game.OnDestroy()
-	logWarn('Game.OnDestroy OnDestroy--->>>');
+    logWarn('Game.OnDestroy OnDestroy--->>>');
 end

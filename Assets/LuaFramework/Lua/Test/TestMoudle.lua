@@ -1,11 +1,11 @@
-require('Common.class')
+local class = require('Common.LuaClass')
+local UE = UnityEngine
 
----@class
 local M = class()
 
-function M:ctor(go)
-    self.a = 'a'
-    self.go = go
+function M:ctor()
+    print('base ctor')
+    --self.name = 'base'
 end
 
 function M:Awake()
@@ -14,8 +14,12 @@ end
 
 function M:Start()
     print('Start')
-    print('TestMoudle.a', self.a)
-    print('TyesMoudle.go', self.go.name)
+end
+
+function M:Update()
+    if UE.Input.GetKeyDown(UE.KeyCode.Space) then
+        print('key down')
+    end
 end
 
 function M:OnEnable()
@@ -24,6 +28,10 @@ end
 
 function M:OnDisable()
     print('OnDisable')
+end
+
+function M:PrintA()
+    print('self type:', self.name)
 end
 
 return M

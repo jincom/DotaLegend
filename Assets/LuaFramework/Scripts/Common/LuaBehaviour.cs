@@ -100,24 +100,24 @@ namespace LuaFramework
         protected virtual void Awake()
         {
             m_luaComponent = LUA_COMPONENT;
-            LuaFunction newfunc = m_luaComponent.GetLuaFunction("new");
+            LuaFunction newfunc = m_luaComponent.GetLuaFunction("New");
             if (newfunc == null)
             {
                 Debug.LogError("luaComponent not found new function");
-                Destroy(this);
+                return;
             }
             newfunc.BeginPCall();
-            newfunc.Push(gameObject);
+            newfunc.Push(this);
             newfunc.PCall();
             m_peer = newfunc.CheckLuaTable();
             newfunc.EndPCall();
 
 
-            SET_PEER.BeginPCall();
-            SET_PEER.Push(this);
-            SET_PEER.Push(m_peer);
-            SET_PEER.PCall();
-            SET_PEER.EndPCall();
+            //SET_PEER.BeginPCall();
+            //SET_PEER.Push(this);
+            //SET_PEER.Push(m_peer);
+            //SET_PEER.PCall();
+            //SET_PEER.EndPCall();
 
             m_lua_update = m_peer.GetLuaFunction("Update");
             m_lua_onenable = m_peer.GetLuaFunction("OnEnable");
@@ -187,6 +187,7 @@ namespace LuaFramework
 
         protected void CallLuaMethod(string methodName, params object[] objs)
         {
+            if (m_peer == null) return;
             LuaFunction lua_func = m_peer.GetLuaFunction(methodName);
             if (lua_func == null)
                 return;

@@ -459,6 +459,7 @@ namespace LuaInterface
 
         public void RegFunction(string name, LuaCSFunction func)
         {
+            //将委托转换为可从非托管代码调用的函数指针
             IntPtr fn = Marshal.GetFunctionPointerForDelegate(func);
             LuaDLL.tolua_function(L, name, fn);            
         }

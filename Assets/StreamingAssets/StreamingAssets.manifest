@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1763544306
+CRC: 3036252134
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -8,7 +8,7 @@ AssetBundleManifest:
     Info_1:
       Name: prefabs/ui/herodetailpanel
       Dependencies:
-        Dependency_0: textrues/altas/skill
+        Dependency_0: textrues/altas/skillicon
     Info_2:
       Name: prefabs/ui/heropanel
       Dependencies:
@@ -32,5 +32,5 @@ AssetBundleManifest:
       Name: textrues/altas/headimg
       Dependencies: {}
     Info_9:
-      Name: textrues/altas/skill
+      Name: textrues/altas/skillicon
       Dependencies: {}

@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -25,12 +25,12 @@ namespace LuaFramework
     ICancelHandler
     {
 
-        private bool m_IsPassEvent;
+        private PassEventType m_passEventType;
         //是否把没监听的事件接口渗透到父物体
-        public bool IsPassEvent
+        public PassEventType PassType
         {
-            get { return m_IsPassEvent; }
-            set { m_IsPassEvent = value; }
+            get { return m_passEventType; }
+            set { m_passEventType = value; }
         }
 
         //BaseEventData参数类型委托
@@ -58,7 +58,14 @@ namespace LuaFramework
         public event BaseDelegate onSubmit;
         public event BaseDelegate onCancel;
 
-        public EventTrigger() { m_IsPassEvent = true; }
+        public EventTrigger() { m_passEventType = PassEventType.Hierarchy; }
+
+        public enum PassEventType
+        {
+            None = 0,
+            Point,
+            Hierarchy,
+        }
 
         public static EventTrigger Get(GameObject go)
         {
@@ -75,13 +82,52 @@ namespace LuaFramework
         protected void PassEvent<T>
             (BaseEventData data, ExecuteEvents.EventFunction<T> callback)
             where T : IEventSystemHandler
-        {
-            if (!m_IsPassEvent) return;
+        {       
 
+            switch (m_passEventType)
+            {
+                case PassEventType.None:
+                    return;
+                    break;
+                case PassEventType.Point:
+                    PassEventAtPoint<T>(data, callback);
+                    break;
+                case PassEventType.Hierarchy:
+                    PassEventHierarchy<T>(data, callback);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        protected void PassEventHierarchy<T>
+            (BaseEventData data, ExecuteEvents.EventFunction<T> callback)
+            where T : IEventSystemHandler
+        {
             Transform parent = transform.parent;
             if (parent == null) return;
             //把事件发送到某个GameObject执行，会一直往父物体传递，直到事件被拦截
             ExecuteEvents.ExecuteHierarchy<T>(parent.gameObject, data, callback);
+        }
+
+        protected void PassEventAtPoint<T>
+            (BaseEventData data, ExecuteEvents.EventFunction<T> callback)
+            where T : IEventSystemHandler
+        {
+            List<RaycastResult> results = new List<RaycastResult>();
+            PointerEventData pointData = new PointerEventData(EventSystem.current);
+            pointData.position = Input.mousePosition;
+            EventSystem.current.RaycastAll(pointData, results);
+            GameObject current = pointData.pointerCurrentRaycast.gameObject;
+            for (int i = 0; i < results.Count; i++)
+            {
+                if (current != results[i].gameObject)
+                {
+                    ExecuteEvents.Execute(results[i].gameObject, data, callback);
+                    break;
+                    //RaycastAll后ugui会自己排序，如果你只想响应透下去的最近的一个响应，这里ExecuteEvents.Execute后直接break就行。
+                }
+            }
         }
 
         public void OnBeginDrag(PointerEventData eventData)

@@ -10,12 +10,12 @@ local Time = Time
 
 Timer = 
 {
-	time	 = 0,
-	duration = 1,
-	loop	 = 1,
-	running	 = false,
-	scale	 = false,
-	func	 = nil,	
+	time	 = 0,			--距离下次回调的还有多久
+	duration = 1,			--计时间隔
+	loop	 = 1,			--执行次数
+	running	 = false,		--是否激活的
+	scale	 = false,		--是否忽略timescale
+	func	 = nil,			--回调函数
 }
 
 local Timer = Timer

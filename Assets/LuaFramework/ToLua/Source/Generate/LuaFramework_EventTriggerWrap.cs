@@ -27,7 +27,7 @@ public class LuaFramework_EventTriggerWrap
 		L.RegFunction("OnUpdateSelected", OnUpdateSelected);
 		L.RegFunction("__eq", op_Equality);
 		L.RegFunction("__tostring", ToLua.op_ToString);
-		L.RegVar("IsPassEvent", get_IsPassEvent, set_IsPassEvent);
+		L.RegVar("PassType", get_PassType, set_PassType);
 		L.RegVar("onEnter", get_onEnter, set_onEnter);
 		L.RegVar("onExit", get_onExit, set_onExit);
 		L.RegVar("onDown", get_onDown, set_onDown);
@@ -376,7 +376,7 @@ public class LuaFramework_EventTriggerWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_IsPassEvent(IntPtr L)
+	static int get_PassType(IntPtr L)
 	{
 		object o = null;
 
@@ -384,13 +384,13 @@ public class LuaFramework_EventTriggerWrap
 		{
 			o = ToLua.ToObject(L, 1);
 			LuaFramework.EventTrigger obj = (LuaFramework.EventTrigger)o;
-			bool ret = obj.IsPassEvent;
-			LuaDLL.lua_pushboolean(L, ret);
+			LuaFramework.EventTrigger.PassEventType ret = obj.PassType;
+			ToLua.Push(L, ret);
 			return 1;
 		}
 		catch(Exception e)
 		{
-			return LuaDLL.toluaL_exception(L, e, o == null ? "attempt to index IsPassEvent on a nil value" : e.Message);
+			return LuaDLL.toluaL_exception(L, e, o == null ? "attempt to index PassType on a nil value" : e.Message);
 		}
 	}
 
@@ -514,7 +514,7 @@ public class LuaFramework_EventTriggerWrap
 	}
 
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_IsPassEvent(IntPtr L)
+	static int set_PassType(IntPtr L)
 	{
 		object o = null;
 
@@ -522,13 +522,13 @@ public class LuaFramework_EventTriggerWrap
 		{
 			o = ToLua.ToObject(L, 1);
 			LuaFramework.EventTrigger obj = (LuaFramework.EventTrigger)o;
-			bool arg0 = LuaDLL.luaL_checkboolean(L, 2);
-			obj.IsPassEvent = arg0;
+			LuaFramework.EventTrigger.PassEventType arg0 = (LuaFramework.EventTrigger.PassEventType)ToLua.CheckObject(L, 2, typeof(LuaFramework.EventTrigger.PassEventType));
+			obj.PassType = arg0;
 			return 0;
 		}
 		catch(Exception e)
 		{
-			return LuaDLL.toluaL_exception(L, e, o == null ? "attempt to index IsPassEvent on a nil value" : e.Message);
+			return LuaDLL.toluaL_exception(L, e, o == null ? "attempt to index PassType on a nil value" : e.Message);
 		}
 	}
 

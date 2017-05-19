@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 224580161132608636}
   - component: {fileID: 114881673475764308}
   m_Layer: 5
-  m_Name: toe_front
+  m_Name: toe_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -325,7 +325,7 @@ GameObject:
   - component: {fileID: 224402848123928668}
   - component: {fileID: 114649024712060022}
   m_Layer: 5
-  m_Name: toe_back
+  m_Name: toe_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 224304030823251120}
   - component: {fileID: 114251494630206876}
   m_Layer: 5
-  m_Name: toe_prefab
+  m_Name: toe_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -534,7 +534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1597163863407178
 GameObject:
   m_ObjectHideFlags: 1
@@ -577,7 +577,7 @@ GameObject:
   - component: {fileID: 224118992261381686}
   - component: {fileID: 114307316475520302}
   m_Layer: 5
-  m_Name: toe_middle
+  m_Name: toe_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -661,7 +661,7 @@ GameObject:
   - component: {fileID: 224925533289882248}
   - component: {fileID: 114936784418311804}
   m_Layer: 5
-  m_Name: toe_all
+  m_Name: toe_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2464,10 +2464,10 @@ RectTransform:
   m_Father: {fileID: 224703299659350552}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 161.5, y: -64}
+  m_SizeDelta: {x: 323, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224228122887857262
 RectTransform:

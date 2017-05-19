@@ -266,6 +266,7 @@
     <Compile Include="Assets\LuaFramework\ToLua\Reflection\LuaReflection.cs" />
     <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\BaseWrap.cs" />
     <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\DG_Tweening_DOTweenWrap.cs" />
+    <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\DG_Tweening_EaseWrap.cs" />
     <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\DG_Tweening_LoopTypeWrap.cs" />
     <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\DG_Tweening_PathModeWrap.cs" />
     <Compile Include="Assets\LuaFramework\ToLua\Source\Generate\DG_Tweening_PathTypeWrap.cs" />

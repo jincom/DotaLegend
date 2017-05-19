@@ -23,6 +23,7 @@ public static class LuaBinder
 		DG_Tweening_PathModeWrap.Register(L);
 		DG_Tweening_PathTypeWrap.Register(L);
 		DG_Tweening_RotateModeWrap.Register(L);
+		DG_Tweening_EaseWrap.Register(L);
 		L.RegFunction("TweenCallback", DG_Tweening_TweenCallback);
 		L.RegFunction("TweenCallback_UnityEngine_GameObject", DG_Tweening_TweenCallback_UnityEngine_GameObject);
 		L.BeginModule("Core");

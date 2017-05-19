@@ -85,7 +85,7 @@ return {
 	[4] = {
 		HERO_ID = 4,
 		HERO_NAME = "小娜迦",
-		HERO_SPRITE = "OD.jpg",
+		HERO_SPRITE = "CM.jpg",
 		HERO_SEX = 2,
 		HERO_SITE = 1,
 		HERO_ATTRIBUTE = 3,
